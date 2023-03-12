@@ -1,7 +1,7 @@
-﻿<Application x:Class="market_viewer.App"
+﻿<Application x:Class="Market_viewer.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:market_viewer"
+             xmlns:local="clr-namespace:Market_viewer"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace market_viewer
+namespace Market_viewer
 {
-    class Stock
+    internal class Stock
     {
         private string ticker;
         private bool ifFavorite;
