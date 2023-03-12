@@ -8,21 +8,26 @@ namespace Market_viewer
 {
     internal class Stock
     {
+        public int id {  get; set; }
+
         private string ticker;
-        private bool ifFavorite;
+
+        private int ifFavorite;// 0 - false, 1 - true
+        
+        public Stock() { }
+
+        Stock(string ticker)
+        {
+            this.ticker = ticker;
+            this.ifFavorite = 0;
+        }
+
         public string Ticker   // property
         {
             get { return ticker; }
         }
 
-
-        Stock(string ticker)
-        {
-            this.ticker = ticker;
-            this.ifFavorite = false;
-        }
-
-        public void SetFavorite() { ifFavorite = true; }
+        public void SetFavorite() { ifFavorite = 1; }
 
     }
 }

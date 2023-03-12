@@ -8,13 +8,21 @@ namespace Market_viewer
 {
     internal class Wallet
     {
-        private List<Stock> stocksList;
-        private float walletValue;
+        public int id {  get; set; }
 
-        Wallet()
+        private float value;
+
+        private int ticker_id;
+
+
+        public Wallet() { }
+
+        public Wallet(int id, float value, int ticker_id)
         {
-            stocksList = new List<Stock>();
-            walletValue = 0;
+            this.id = id;
+            this.value = value;
+            this.ticker_id = ticker_id;
         }
+
     }
 }
