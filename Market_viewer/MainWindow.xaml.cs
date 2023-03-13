@@ -21,6 +21,10 @@ namespace Market_viewer
         public MainWindow()
         {
             InitializeComponent();
+            ApplicationContexDB db = new ApplicationContexDB();
+
+            List<Ticker> tickers = db.Tickers.ToList();
+            listOfUsers.ItemsSource = tickers;
         }
     }
 }

@@ -18,9 +18,9 @@ namespace Market_viewer
             outputsize = "compact"; // 100 data points
             key = apiKey;
         }
-        public void SetUrl(Stock stock)
+        public void SetUrl(Ticker stock)
         {
-            url = $"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={stock.Ticker}&apikey={key}";
+            url = $"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={stock.Name}&apikey={key}";
         }
     }
 }

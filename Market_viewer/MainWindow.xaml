@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListView x:Name="listOfUsers" Margin="10" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding id}" FontWeight="Bold"/>
+                        <TextBlock Text=", " />
+                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text=", " />
+                        <TextBlock Text="{Binding ifFavorite}" />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Window>

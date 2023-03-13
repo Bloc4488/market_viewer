@@ -75,7 +75,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Api.cs" />
-    <Compile Include="Stock.cs" />
+    <Compile Include="ApplicationContexDB.cs" />
+    <Compile Include="Ticker.cs" />
     <Compile Include="Wallet.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -108,6 +109,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Market_DB.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
