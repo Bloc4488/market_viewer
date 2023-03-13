@@ -31,6 +31,7 @@ namespace Market_viewer
         public int IfFavorite
         {
             get { return ifFavorite; }
+            set { ifFavorite = value; }
         }
 
         public void SetFavorite() { ifFavorite = 1; }

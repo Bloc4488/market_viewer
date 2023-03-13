@@ -6,16 +6,27 @@
         xmlns:local="clr-namespace:Market_viewer"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ListView x:Name="listOfUsers" Margin="10" >
+    <Grid Margin="0 0 0 20">
+        <ListView x:Name="listOfUsers" Margin="10" HorizontalAlignment="Left">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
                         <TextBlock Text="{Binding id}" FontWeight="Bold"/>
                         <TextBlock Text=", " />
                         <TextBlock Text="{Binding Name}" />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <ListView x:Name="listOfWallet" Margin="10" HorizontalAlignment="Right">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding id}" FontWeight="Bold"/>
                         <TextBlock Text=", " />
-                        <TextBlock Text="{Binding ifFavorite}" />
+                        <TextBlock Text="{Binding Amount}" />
+                        <TextBlock Text=", " />
+                        <TextBlock Text="{Binding TickerId}" />
                     </WrapPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

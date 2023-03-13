@@ -25,6 +25,9 @@ namespace Market_viewer
 
             List<Ticker> tickers = db.Tickers.ToList();
             listOfUsers.ItemsSource = tickers;
+
+            List<Wallet> wallet = db.Wallets.ToList();
+            listOfWallet.ItemsSource = wallet;
         }
     }
 }

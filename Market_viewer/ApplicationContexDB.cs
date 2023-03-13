@@ -11,7 +11,7 @@ namespace Market_viewer
     {
         public DbSet<Ticker> Tickers { get; set; }
 
-        public DbSet<Wallet> Wallet { get; set; }
+        public DbSet<Wallet> Wallets { get; set; }
 
         public ApplicationContexDB() : base("DefaultConnection") { }
     }
