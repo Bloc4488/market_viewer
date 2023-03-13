@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,12 +10,12 @@ namespace Market_viewer
 {
     internal class Wallet
     {
+        [Key]
         public int id { get; set; }
 
         private float amount;
 
         private int tickerId;
-
 
         public Wallet() { }
 
