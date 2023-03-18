@@ -7,26 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="0 0 0 20">
-        <ListView x:Name="listOfUsers" Margin="10" HorizontalAlignment="Left">
-            <ListView.ItemTemplate>
+        <ListBox x:Name="listOfTic" Margin="10" HorizontalAlignment="Left">
+            <ListBox.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
                         <TextBlock Text="{Binding id}" FontWeight="Bold"/>
-                        <TextBlock Text=", " />
-                        <TextBlock Text="{Binding Name}" />
+                        <TextBlock Text=" , " />
+                        <TextBlock Text="{Binding name}"/>
                     </WrapPanel>
                 </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+            </ListBox.ItemTemplate>
+        </ListBox>
         <ListView x:Name="listOfWallet" Margin="10" HorizontalAlignment="Right">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
                         <TextBlock Text="{Binding id}" FontWeight="Bold"/>
                         <TextBlock Text=", " />
-                        <TextBlock Text="{Binding Amount}" />
+                        <TextBlock Text="{Binding amount}" />
                         <TextBlock Text=", " />
-                        <TextBlock Text="{Binding TickerId}" />
+                        <TextBlock Text="{Binding tickerId}" />
                     </WrapPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

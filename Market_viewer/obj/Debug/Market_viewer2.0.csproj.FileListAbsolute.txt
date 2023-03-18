@@ -19,3 +19,4 @@ D:\GIT\Market_viewer2.0\obj\Debug\Market_viewer2.0.csproj.CoreCompileInputs.cach
 D:\GIT\Market_viewer2.0\obj\Debug\Market_viewer2.0.csproj.CopyComplete
 D:\GIT\Market_viewer2.0\obj\Debug\Market_viewer2.0.exe
 D:\GIT\Market_viewer2.0\obj\Debug\Market_viewer2.0.pdb
+D:\GIT\Market_viewer2.0\obj\Debug\Market_viewer2._0.Migrations.InitialCreate.resources

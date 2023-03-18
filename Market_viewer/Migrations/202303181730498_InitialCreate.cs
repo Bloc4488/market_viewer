@@ -21,11 +21,11 @@
                 "dbo.Wallets",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        id = c.Int(nullable: false, identity: true),
                         amount = c.Double(nullable: false),
                         tickerId = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.Id)
+                .PrimaryKey(t => t.id)
                 .ForeignKey("dbo.Tickers", t => t.tickerId, cascadeDelete: true)
                 .Index(t => t.tickerId);
             

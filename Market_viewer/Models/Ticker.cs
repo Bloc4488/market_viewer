@@ -18,5 +18,13 @@ namespace Market_viewer2._0.Models
         public virtual ICollection<Wallet> Wallets { get; set; }
 
         public Ticker() { }
+
+        public Ticker(int id, string name, int isFavorite, ICollection<Wallet> wal)
+        {
+            this.id = id;
+            this.name = name;
+            this.isFavorite = isFavorite;
+            this.Wallets = wal;
+        }
     }
 }

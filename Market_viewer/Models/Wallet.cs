@@ -11,7 +11,7 @@ namespace Market_viewer2._0.Models
 {
     public class Wallet
     {
-        public int Id { get; set; }
+        public int id { get; set; }
 
         public double amount { get; set; }
 
@@ -21,5 +21,10 @@ namespace Market_viewer2._0.Models
         public virtual Ticker Ticker { get; set; }
         
         public Wallet() { }
+
+        public string GetNameTicker()
+        {
+            return Ticker.name;
+        }
     }
 }
