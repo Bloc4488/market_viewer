@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Market_viewer.Properties
+namespace Market_viewer2._0.Properties
 {
 
 

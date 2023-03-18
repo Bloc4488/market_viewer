@@ -7,11 +7,13 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Documents.Serialization;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Market_viewer2._0.Models;
 
 namespace Market_viewer
 {
@@ -21,13 +23,7 @@ namespace Market_viewer
         public MainWindow()
         {
             InitializeComponent();
-            ApplicationContexDB db = new ApplicationContexDB();
-
-            List<Ticker> tickers = db.Tickers.ToList();
-            listOfUsers.ItemsSource = tickers;
-
-            List<Wallet> wallet = db.Wallets.ToList();
-            listOfWallet.ItemsSource = wallet;
+            
         }
     }
 }

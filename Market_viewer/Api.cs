@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Market_viewer2._0.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,9 +19,9 @@ namespace Market_viewer
             outputsize = "compact"; // 100 data points
             key = apiKey;
         }
-        public void SetUrl(Ticker stock)
+        public void SetUrl(Ticker ticker)
         {
-            url = $"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={stock.Name}&apikey={key}";
+            url = $"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={ticker.name}&apikey={key}";
         }
     }
 }
