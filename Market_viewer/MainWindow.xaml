@@ -18,7 +18,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <ListView x:Name="listOfWallet" Margin="10" HorizontalAlignment="Right">
+        <ListView ItemsSource="{Binding Wallets}" Margin="10" HorizontalAlignment="Right">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
@@ -26,7 +26,7 @@
                         <TextBlock Text=", " />
                         <TextBlock Text="{Binding amount}" />
                         <TextBlock Text=", " />
-                        <TextBlock Text="{Binding tickerId}" />
+                        <TextBlock Text="{Binding Ticker.name}" />
                     </WrapPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>

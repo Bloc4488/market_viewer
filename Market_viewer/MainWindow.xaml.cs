@@ -23,55 +23,25 @@ namespace Market_viewer
         public MainWindow()
         {
             InitializeComponent();
-            /*using (var context = new StockContext())
+            /*using (var context = new StockContext()) 
             {
-                var tickers = new List<Ticker>
-                {
-                    new Ticker() {id = 1, name = "KND", isFavorite = 0},
-                    new Ticker() {id = 2, name = "SGE", isFavorite = 0},
-                    new Ticker() {id = 3, name = "WDF", isFavorite = 0}
-                };
-                tickers.ForEach(ticker => context.Tickers.Add(ticker));
+                var ticker = new Ticker { name = "AAAS", isFavorite = 0 };
+                context.Tickers.Add(ticker);
                 context.SaveChanges();
 
-                List<Ticker> ticker_db = context.Tickers.ToList();
-
-                var wallets = new List<Wallet>
-                {
-                    new Wallet()
-                    {
-                        id = 1,
-                        amount = 0.6,
-                        Ticker = ticker_db[0],
-                        tickerId = ticker_db[0].id
-                    },
-                    new Wallet()
-                    {
-                        id = 2,
-                        amount = 2.6,
-                        Ticker = ticker_db[1],
-                        tickerId = ticker_db[1].id
-                    }
-                };
-                wallets.ForEach(s => context.Wallets.Add(s));
+                var wallet = new Wallet { tickerId = ticker.id, amount = 10};
+                context.Wallets.Add(wallet);
                 context.SaveChanges();
             }*/
-            List<Ticker> listOfTickers;
+            var viewModel = new ViewModel();
+            DataContext = viewModel;
+
+            IList<Ticker> tickerList = new List<Ticker>();
             using (var context = new StockContext())
             {
-                listOfTickers = context.Tickers.ToList();
+                tickerList = context.Tickers.ToList();
             }
-
-            listOfTic.ItemsSource = listOfTickers;
-
-            List<Wallet> listOfWal;
-            using (var context = new StockContext())
-            {
-                listOfWal = context.Wallets.ToList();
-            }
-
-            listOfWallet.ItemsSource = listOfWal;
-            Console.WriteLine(listOfWal);
+            listOfTic.ItemsSource = tickerList;
         }
     }
 }

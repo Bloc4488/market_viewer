@@ -15,16 +15,11 @@ namespace Market_viewer2._0.Models
 
         public double amount { get; set; }
 
-        [ForeignKey("Ticker")]
         public int tickerId { get; set; }
 
         public virtual Ticker Ticker { get; set; }
         
         public Wallet() { }
 
-        public string GetNameTicker()
-        {
-            return Ticker.name;
-        }
     }
 }

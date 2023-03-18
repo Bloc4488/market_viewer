@@ -18,13 +18,21 @@ namespace Market_viewer2._0.Models
 
         public DbSet<Ticker> Tickers { get; set; }
 
-        public DbSet<Wallet> Wallets { get; set; } 
+        public DbSet<Wallet> Wallets { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Wallet>()
+                .HasRequired(w => w.Ticker)
+                .WithMany(t => t.Wallets)
+                .HasForeignKey(w => w.tickerId);
+        }
     }
 
     public class StockDbInitializer : DropCreateDatabaseAlways<StockContext>
     {
 
-        protected override void Seed(StockContext context)
+        /*protected override void Seed(StockContext context)
         {
             var tickers = new List<Ticker>
             {
@@ -56,6 +64,6 @@ namespace Market_viewer2._0.Models
             };
             wallets.ForEach(s =>  context.Wallets.Add(s));
             context.SaveChanges();
-        }
+        }*/
     }
 }
