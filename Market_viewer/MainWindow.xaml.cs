@@ -33,15 +33,19 @@ namespace Market_viewer
                 context.Wallets.Add(wallet);
                 context.SaveChanges();
             }*/
-            var viewModel = new ViewModel();
-            DataContext = viewModel;
+            //var viewModel = new ViewModel();
+            //DataContext = viewModel;
 
-            IList<Ticker> tickerList = new List<Ticker>();
-            using (var context = new StockContext())
-            {
-                tickerList = context.Tickers.ToList();
-            }
-            listOfTic.ItemsSource = tickerList;
+            //IList<Ticker> tickerList = new List<Ticker>();
+            //using (var context = new StockContext())
+            //{
+            //    tickerList = context.Tickers.ToList();
+            //}
+            //listOfTic.ItemsSource = tickerList;
+
+            Stock test_stock = new Stock("VRTV");
+            Api test_api = new Api();
+            test_api.DownloadData(test_stock);
         }
     }
 }

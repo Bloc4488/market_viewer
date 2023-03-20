@@ -2,26 +2,42 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
+using System.Xml.Linq;
+using Newtonsoft.Json.Linq;
 
 namespace Market_viewer
 {
-    internal class Api
+    class Api
     {
         private readonly string datatype;
         private readonly string outputsize;
         private readonly string key;
-        private string url = String.Empty;
-        Api(string apiKey = "01IC5EI68QVQTUPS")
+        private string apiUrl = string.Empty;
+        public Api(string apiKey = "01IC5EI68QVQTUPS")
         {
             datatype = "csv"; // another possibitity is json
             outputsize = "compact"; // 100 data points
             key = apiKey;
         }
-        public void SetUrl(Ticker ticker)
+        public void SetUrl(Stock stock)
         {
-            url = $"https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={ticker.name}&apikey={key}";
+            apiUrl = $"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={stock.Ticker}" +
+                $"&apikey={key}&datatype={datatype}&outputsize{outputsize}";
+        }
+
+        public void DownloadData(Stock stock)
+        {
+            SetUrl(stock);
+
+            using (WebClient client = new WebClient())
+            {
+                string data = client.DownloadString(apiUrl);
+                Console.Write(data);
+            }
         }
     }
 }
