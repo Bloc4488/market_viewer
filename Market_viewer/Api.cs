@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 using System.Xml.Linq;
 using Newtonsoft.Json.Linq;
+using Market_viewer2._0;
 
 namespace Market_viewer
 {
@@ -36,7 +37,26 @@ namespace Market_viewer
             using (WebClient client = new WebClient())
             {
                 string data = client.DownloadString(apiUrl);
-                Console.Write(data);
+                string line = string.Empty;
+
+                using (System.IO.StringReader reader = new System.IO.StringReader(data))
+                {
+                    while (null != (line = reader.ReadLine()))
+                    {
+                        StockDataPoint point = new StockDataPoint();
+                        string[] elements = line.Split(',');
+                        point.Date = elements[0];
+                        point.Open = elements[1];
+                        point.High = elements[2];
+                        point.Low = elements[3];
+                        point.Close = elements[4];
+                        point.Adj_close = elements[5];
+                        point.Volume = elements[6];
+                        point.Dividend = elements[7];
+
+                        stock.StockDataList.Add(point);
+                    }
+                }
             }
         }
     }
