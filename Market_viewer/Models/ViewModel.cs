@@ -11,12 +11,24 @@ namespace Market_viewer2._0.Models
     {
         public ObservableCollection<Wallet> Wallets { get; set; }
 
-        public ViewModel() 
+        public ViewModel()
         {
             using (var context = new StockContext())
             {
                 Wallets = new ObservableCollection<Wallet>(context.Wallets.Include("Ticker").ToList());
             }
+        }
+
+        public ObservableCollection<Wallet> AddAmountTicker(Wallet Wallet)
+        {
+            ObservableCollection<Wallet> wallets;
+            using (var context = new StockContext()) 
+            {
+                context.Entry(Wallet).Entity.amount += 1;
+                wallets = new ObservableCollection<Wallet>(context.Wallets.Include("Ticker").ToList());
+                context.SaveChanges();
+            }
+            return wallets;
         }
     }
 }

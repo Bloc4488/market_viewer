@@ -43,5 +43,20 @@ namespace Market_viewer
             }
             listOfTic.ItemsSource = tickerList;
         }
+
+        private void btnAddSelectedItemAmount_Click(object sender, RoutedEventArgs e)
+        {
+            var ticker = listOfWallet.SelectedItem as Wallet;
+            if (ticker == null) 
+            {
+                MessageBox.Show("Choose ticker");
+            }
+            else
+            {
+                var ViewModel = new ViewModel();
+                ViewModel.AddAmountTicker(ticker);
+                DataContext = ViewModel;
+            }
+        }
     }
 }

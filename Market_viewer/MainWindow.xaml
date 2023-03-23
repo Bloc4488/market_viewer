@@ -6,30 +6,27 @@
         xmlns:local="clr-namespace:Market_viewer"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="0 0 0 20">
+    <Grid Margin="0,0,0,20">
         <ListBox x:Name="listOfTic" Margin="10" HorizontalAlignment="Left">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
-                        <TextBlock Text="{Binding id}" FontWeight="Bold"/>
-                        <TextBlock Text=" , " />
-                        <TextBlock Text="{Binding name}"/>
+                        <TextBlock Text="{Binding name}" FontWeight="Bold"/>
                     </WrapPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <ListView ItemsSource="{Binding Wallets}" Margin="10" HorizontalAlignment="Right">
+        <ListView x:Name="listOfWallet" ItemsSource="{Binding Wallets}" Margin="10" HorizontalAlignment="Right">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
-                        <TextBlock Text="{Binding id}" FontWeight="Bold"/>
-                        <TextBlock Text=", " />
                         <TextBlock Text="{Binding amount}" />
-                        <TextBlock Text=", " />
-                        <TextBlock Text="{Binding Ticker.name}" />
+                        <TextBlock Text=" " />
+                        <TextBlock Text="{Binding Ticker.name}" FontWeight="Bold" />
                     </WrapPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button Click="btnAddSelectedItemAmount_Click" VerticalAlignment="Bottom">Show</Button>
     </Grid>
 </Window>
