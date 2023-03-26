@@ -36,7 +36,7 @@ namespace Market_viewer
             var viewModel = new ViewModel();
             DataContext = viewModel;
 
-            IList<Ticker> tickerList = new List<Ticker>();
+            IList<Stock> tickerList = new List<Stock>();
             using (var context = new StockContext())
             {
                 tickerList = context.Tickers.ToList();
