@@ -24,7 +24,7 @@ namespace Market_viewer2._0.Models
         }
         public void SetUrl(Stock stock)
         {
-            apiUrl = $"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={stock.name}" +
+            apiUrl = $"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={stock.Name}" +
                 $"&apikey={key}&datatype={datatype}&outputsize{outputsize}";
         }
 

@@ -20,43 +20,91 @@ namespace Market_viewer
 
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
-            /*using (var context = new StockContext()) 
-            {
-                var ticker = new Ticker { name = "AAAS", isFavorite = 0 };
-                context.Tickers.Add(ticker);
-                context.SaveChanges();
-
-                var wallet = new Wallet { tickerId = ticker.id, amount = 10};
-                context.Wallets.Add(wallet);
-                context.SaveChanges();
-            }*/
             var viewModel = new ViewModel();
             DataContext = viewModel;
-
-            IList<Stock> tickerList = new List<Stock>();
-            using (var context = new StockContext())
-            {
-                tickerList = context.Tickers.ToList();
-            }
-            listOfTic.ItemsSource = tickerList;
         }
 
         private void btnAddSelectedItemAmount_Click(object sender, RoutedEventArgs e)
         {
-            var ticker = listOfWallet.SelectedItem as Wallet;
-            if (ticker == null) 
+            double amount = 0.0;
+            try
             {
-                MessageBox.Show("Choose ticker");
+                amount = Convert.ToDouble(AmountOfTickerToAddOrMinus.Text);
             }
-            else
+            catch (FormatException)
             {
-                var ViewModel = new ViewModel();
-                ViewModel.AddAmountTicker(ticker);
-                DataContext = ViewModel;
+                MessageBox.Show("Please enter a valid number");
             }
+            finally
+            {
+                var tickerFromWallet = listOfWallet.SelectedItem as Wallet;
+                if (tickerFromWallet == null)
+                {
+                    //var tickerFromStock = listOfStock.SelectedItem as Stock;
+                    //Wallet wallet = new Wallet(tickerFromStock);
+                    //if (wallet == null)
+                    //{
+                        MessageBox.Show("Choose ticker");
+                    //}
+                    //else
+                    //{
+                    //    var viewModel = DataContext as ViewModel;
+                    //    viewModel?.AddNewTickerToWallet(wallet);
+                    //    viewModel?.AddAmountTicker(wallet, amount);
+                    //}
+                }
+                else
+                {
+                    var viewModel = DataContext as ViewModel;
+                    viewModel?.AddAmountTicker(tickerFromWallet, amount);
+                }
+            }
+            AmountOfTickerToAddOrMinus.Text = "";
+        }
+
+        private void btnMinusSelectedItemAmount_Click(object sender, RoutedEventArgs e)
+        {
+            double amount = 0.0;
+            try
+            {
+                amount = Convert.ToDouble(AmountOfTickerToAddOrMinus.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter a valid number");
+            }
+            finally
+            {
+                var ticker = listOfWallet.SelectedItem as Wallet;
+                if (ticker == null)
+                {
+                    MessageBox.Show("Choose ticker");
+                }
+                else
+                {
+                    var viewModel = DataContext as ViewModel;
+                    viewModel?.MinusAmountTicker(ticker, amount);
+                }
+            }
+            AmountOfTickerToAddOrMinus.Text = "";
+        }
+
+        private void btnAddTickerToTickers_Click(object sender, RoutedEventArgs e)
+        {
+            var tickerName = Convert.ToString(AddNewTicker.Text);
+            var viewModel = DataContext as ViewModel;
+            Stock ticker = new Stock(tickerName);
+            viewModel?.AddNewTicker(ticker);
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+        //    var viewModel = DataContext as ViewModel;
+        //    viewModel?.RemoveAllTickersNotFavourite();
         }
     }
 }

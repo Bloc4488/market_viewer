@@ -11,9 +11,9 @@ namespace Market_viewer2._0.Models
     {
         public int id { get; set; }
 
-        public string name { get; set; }
+        private string name { get; set; }
 
-        private bool isFavorite { get; set; }
+        private bool isFavourite { get; set; }
 
         public List<StockDataPoint> StockDataList { get; set; }
 
@@ -23,11 +23,33 @@ namespace Market_viewer2._0.Models
 
         public Stock(string ticker)
         {
-            this.name = name;
-            this.isFavorite = false;
+            this.name = ticker;
+            this.isFavourite = true;
             StockDataList = new List<StockDataPoint>();
         }
 
-        public void SetFavorite() { isFavorite = true; }
+        public bool IsFavourite
+        { 
+            get 
+            { 
+                return isFavourite; 
+            } 
+            set 
+            { 
+                this.isFavourite = value;
+            } 
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set 
+            {
+                name = value;
+            }
+        }
     }
 }

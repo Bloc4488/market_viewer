@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using System.Xml.Linq;
 
 
 namespace Market_viewer2._0.Models
@@ -27,11 +29,21 @@ namespace Market_viewer2._0.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<StockDataPoint>()
-                .HasKey(p => p.ID);
+                .HasKey(p => p.ID)
+                .Property(e => e.ID)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            modelBuilder.Entity<Wallet>()
+                .HasKey(p => p.id)
+                .Property(e => e.id)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             modelBuilder.Entity<Wallet>()
                 .HasRequired(w => w.Ticker)
                 .WithMany(t => t.Wallets)
                 .HasForeignKey(w => w.tickerId);
+            modelBuilder.Entity<Stock>()
+                .HasKey(p => p.id)
+                .Property(e => e.id)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
         }
     }
 
@@ -42,9 +54,9 @@ namespace Market_viewer2._0.Models
         {
             var tickers = new List<Stock>
             {
-                new Stock() {name = "KND"},
-                new Stock() {name = "SGE"},
-                new Stock() {name = "WDF"}
+                new Stock("KND"),
+                new Stock("SGE"),
+                new Stock("WDF")
             };
             tickers.ForEach(ticker => context.Tickers.Add(ticker));
             context.SaveChanges();
@@ -55,14 +67,12 @@ namespace Market_viewer2._0.Models
             {
                 new Wallet()
                 {
-                    id = 1,
                     amount = 0.6,
                     Ticker = ticker_db[0],
                     tickerId = ticker_db[0].id                                        
                 },
                 new Wallet()
                 {
-                    id = 2,
                     amount = 2.6,
                     Ticker = ticker_db[1],
                     tickerId = ticker_db[1].id

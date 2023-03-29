@@ -20,5 +20,12 @@ namespace Market_viewer2._0.Models
         public virtual Stock Ticker { get; set; }
         
         public Wallet() { }
+
+        public Wallet(Stock ticker)
+        {
+            Ticker = ticker;
+            tickerId = ticker.id;
+            amount = 0;
+        }
     }
 }
