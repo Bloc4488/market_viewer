@@ -22,7 +22,7 @@ namespace Market_viewer2._0.Models
             using (var context = new StockContext())
             {
                 Wallets = new ObservableCollection<Wallet>(context.Wallets.Include("Ticker").ToList());
-                Tickers = new ObservableCollection<Stock>(context.Tickers.Where(s => s.IsFavourite == true).ToList());
+                Tickers = new ObservableCollection<Stock>(context.Tickers.ToList());
             }
         }
 
@@ -85,25 +85,54 @@ namespace Market_viewer2._0.Models
 
         public ObservableCollection<Stock> AddNewTicker(Stock stock)
         {
+            Tickers = new ObservableCollection<Stock>();
             using (var context = new StockContext())
             {
                 context.Tickers.Add(stock);
                 context.SaveChanges();
-                Tickers = new ObservableCollection<Stock>(context.Tickers.Where(s => s.IsFavourite == true).ToList());
+                Tickers = new ObservableCollection<Stock>(context.Tickers.ToList());
             }
             OnPropertyChanged(nameof(Tickers));
             return Tickers;
         }
 
-        //public void RemoveAllTickersNotFavourite()
-        //{
-        //    using (var context = new StockContext())
-        //    {
-        //        var RemoveListTickers = context.Tickers.Where(s => s.IsFavourite == false).ToList();
-        //        context.Tickers.RemoveRange(RemoveListTickers);
-        //        context.SaveChanges();
-        //    }
-        //}
+        public ObservableCollection<Stock> MakeTickerFavourite(Stock stock) 
+        {
+            Tickers = new ObservableCollection<Stock>();
+            using (var context = new StockContext())
+            {
+                var tickerToMakeFavourite = context.Tickers.Find(stock.id);
+                tickerToMakeFavourite.IsFavourite = true;
+                context.SaveChanges();
+                Tickers = new ObservableCollection<Stock>(context.Tickers.ToList());
+            }
+            OnPropertyChanged(nameof(Tickers));
+            return Tickers;
+        }
+
+        public ObservableCollection<Stock> RemoveTickerFavourite(Stock stock)
+        {
+            Tickers = new ObservableCollection<Stock>();
+            using (var context = new StockContext())
+            {
+                var tickerToRemoveFavourite = context.Tickers.Find(stock.id);
+                tickerToRemoveFavourite.IsFavourite = false;
+                context.SaveChanges();
+                Tickers = new ObservableCollection<Stock>(context.Tickers.ToList());
+            }
+            OnPropertyChanged(nameof(Tickers));
+            return Tickers;
+        }
+
+        public void RemoveAllTickersNotFavourite()
+        {
+            using (var context = new StockContext())
+            {
+                var RemoveListTickers = context.Tickers.Where(s => s.IsFavourite == false).ToList();
+                context.Tickers.RemoveRange(RemoveListTickers);
+                context.SaveChanges();
+            }
+        }
 
         protected void OnPropertyChanged([CallerMemberName] string propertyName = null) 
         {

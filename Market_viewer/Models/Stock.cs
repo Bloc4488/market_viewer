@@ -24,7 +24,7 @@ namespace Market_viewer2._0.Models
         public Stock(string ticker)
         {
             this.name = ticker;
-            this.isFavourite = true;
+            this.isFavourite = false;
             StockDataList = new List<StockDataPoint>();
         }
 

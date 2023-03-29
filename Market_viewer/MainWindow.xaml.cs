@@ -103,8 +103,36 @@ namespace Market_viewer
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-        //    var viewModel = DataContext as ViewModel;
-        //    viewModel?.RemoveAllTickersNotFavourite();
+            var viewModel = DataContext as ViewModel;
+            viewModel?.RemoveAllTickersNotFavourite();
+        }
+
+        private void btnMakeFavouriteTicker_Click(object sender, RoutedEventArgs e)
+        {
+            var ticker = listOfStock.SelectedItem as Stock;
+            if (ticker == null)
+            {
+                MessageBox.Show("Choose ticker");
+            }
+            else
+            {
+                var viewModel = DataContext as ViewModel;
+                viewModel?.MakeTickerFavourite(ticker);
+            }
+        }
+
+        private void btnRemoveFavouriteTicker_Click(object sender, RoutedEventArgs e)
+        {
+            var ticker = listOfStock.SelectedItem as Stock;
+            if (ticker == null)
+            {
+                MessageBox.Show("Choose ticker");
+            }
+            else
+            {
+                var viewModel = DataContext as ViewModel;
+                viewModel?.RemoveTickerFavourite(ticker);
+            }
         }
     }
 }

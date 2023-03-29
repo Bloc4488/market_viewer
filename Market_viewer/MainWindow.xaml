@@ -12,11 +12,13 @@
             <ColumnDefinition Width="159*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="listOfStock" ItemsSource="{Binding Tickers}" Margin="12,64,0,10" HorizontalAlignment="Left" Width="68">
+        <ListBox x:Name="listOfStock" ItemsSource="{Binding Tickers}" Margin="12,64,0,10" HorizontalAlignment="Left" Width="88">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
                         <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
+                        <TextBlock Text=", "/>
+                        <TextBlock Text="{Binding IsFavourite}"/>
                     </WrapPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
@@ -32,10 +34,12 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Click="btnAddSelectedItemAmount_Click" VerticalAlignment="Bottom" Height="30" Margin="422,0,278,0">Dodaj</Button>
-        <Button Click="btnMinusSelectedItemAmount_Click" VerticalAlignment="Bottom" Height="30" Margin="523,0,177,0">Usun</Button>
-        <TextBox HorizontalAlignment="Left" Margin="422,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" x:Name="AmountOfTickerToAddOrMinus"/>
+        <Button Click="btnAddSelectedItemAmount_Click" VerticalAlignment="Bottom" Height="30" Margin="422,0,278,10" Content="Add"/>
+        <Button Click="btnMinusSelectedItemAmount_Click" VerticalAlignment="Bottom" Height="30" Margin="523,0,177,10" Content="Remove"/>
+        <TextBox HorizontalAlignment="Left" Margin="422,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" x:Name="AmountOfTickerToAddOrMinus"/>
         <TextBox HorizontalAlignment="Left" Height="20" Margin="12,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" x:Name="AddNewTicker"/>
         <Button Click="btnAddTickerToTickers_Click"  Content="Add ticker" HorizontalAlignment="Left" Margin="100,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.252,0.253"/>
+        <Button Content="Make Favourite" HorizontalAlignment="Left" Margin="120,357,0,0" VerticalAlignment="Top" Height="25" Width="100" Click="btnMakeFavouriteTicker_Click"/>
+        <Button Content="Remove Favourite" HorizontalAlignment="Left" Margin="120,317,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnRemoveFavouriteTicker_Click"/>
     </Grid>
 </Window>
