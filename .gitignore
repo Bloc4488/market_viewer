@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/market_viewer/v17/.wsuo
+/.vs/VSWorkspaceState.json
+/Market_viewer/.vs/Market_viewer2.0/FileContentIndex
+/Market_viewer
