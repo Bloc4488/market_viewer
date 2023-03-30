@@ -101,12 +101,6 @@ namespace Market_viewer
             viewModel?.AddNewTicker(ticker);
         }
 
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            var viewModel = DataContext as ViewModel;
-            viewModel?.RemoveAllTickersNotFavourite();
-        }
-
         private void btnMakeFavouriteTicker_Click(object sender, RoutedEventArgs e)
         {
             var ticker = listOfStock.SelectedItem as Stock;
@@ -133,6 +127,12 @@ namespace Market_viewer
                 var viewModel = DataContext as ViewModel;
                 viewModel?.RemoveTickerFavourite(ticker);
             }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            var viewModel = DataContext as ViewModel;
+            viewModel?.RemoveAllTickersNotFavourite();
         }
     }
 }
