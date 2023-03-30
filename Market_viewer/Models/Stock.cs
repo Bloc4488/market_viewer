@@ -4,6 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OxyPlot.Series;
+using OxyPlot;
+using Newtonsoft.Json.Linq;
 
 namespace Market_viewer2._0.Models
 {
@@ -50,6 +53,23 @@ namespace Market_viewer2._0.Models
             {
                 name = value;
             }
+        }
+
+        public PlotModel PlotChart()
+        {
+            var plotModel = new PlotModel();
+
+            var series = new LineSeries();
+            for (int i = 0; i < 7; i++)
+            {
+                series.Points.Add(new DataPoint(i, i*i));
+            }
+
+            plotModel.Series.Add(series);
+
+            plotModel.Title = this.Name;
+
+            return plotModel;
         }
     }
 }

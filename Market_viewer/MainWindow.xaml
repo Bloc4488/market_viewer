@@ -1,5 +1,6 @@
 ﻿<Window x:Class="Market_viewer.MainWindow"
         Closing="Window_Closing"
+        xmlns:oxy="clr-namespace:OxyPlot.Wpf;assembly=OxyPlot.Wpf"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -12,7 +13,7 @@
             <ColumnDefinition Width="159*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="listOfStock" ItemsSource="{Binding Tickers}" Margin="12,64,0,10" HorizontalAlignment="Left" Width="68">
+        <ListBox x:Name="listOfStock" SelectionChanged="ListOfStock_SelectionChanged" SelectionMode="Single" ItemsSource="{Binding Tickers}" Margin="12,85,0,10" HorizontalAlignment="Left" Width="68">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
@@ -21,7 +22,7 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <ListView x:Name="listOfWallet" ItemsSource="{Binding Wallets}" Margin="695,10,0,10" HorizontalAlignment="Left" Width="75" RenderTransformOrigin="0.533,0.492">
+        <ListView x:Name="listOfWallet" ItemsSource="{Binding Wallets}" Margin="0,10,25,10" RenderTransformOrigin="0.533,0.492" HorizontalAlignment="Right" Width="75">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
@@ -32,10 +33,11 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Click="btnAddSelectedItemAmount_Click" VerticalAlignment="Bottom" Height="30" Margin="422,0,278,0">Dodaj</Button>
-        <Button Click="btnMinusSelectedItemAmount_Click" VerticalAlignment="Bottom" Height="30" Margin="523,0,177,0">Usun</Button>
-        <TextBox HorizontalAlignment="Left" Margin="422,324,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" x:Name="AmountOfTickerToAddOrMinus"/>
-        <TextBox HorizontalAlignment="Left" Height="20" Margin="12,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" x:Name="AddNewTicker"/>
-        <Button Click="btnAddTickerToTickers_Click"  Content="Add ticker" HorizontalAlignment="Left" Margin="100,19,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.252,0.253"/>
+        <Button Click="btnAddSelectedItemAmount_Click" Margin="0,0,230,15" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="95">Dodaj</Button>
+        <Button Click="btnMinusSelectedItemAmount_Click" Margin="0,0,129,15" HorizontalAlignment="Right" Width="95" Height="30" VerticalAlignment="Bottom">Usun</Button>
+        <TextBox HorizontalAlignment="Right" Margin="0,0,129,53" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="196" x:Name="AmountOfTickerToAddOrMinus"/>
+        <TextBox Margin="12,14,0,0" TextWrapping="Wrap" x:Name="AddNewTicker" HorizontalAlignment="Left" Width="68" Height="20" VerticalAlignment="Top"/>
+        <Button Click="btnAddTickerToTickers_Click"  Content="Add stock" Margin="12,39,0,0" RenderTransformOrigin="0.252,0.253" HorizontalAlignment="Left" Width="68" Height="21" VerticalAlignment="Top"/>
+        <oxy:PlotView x:Name="StockChart" Margin="103,14,129,93"/>
     </Grid>
 </Window>

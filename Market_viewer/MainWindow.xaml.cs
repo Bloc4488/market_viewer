@@ -14,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Market_viewer2._0.Models;
+using OxyPlot;
 
 namespace Market_viewer
 {
@@ -24,6 +25,7 @@ namespace Market_viewer
         public MainWindow()
         {
             InitializeComponent();
+
             var viewModel = new ViewModel();
             DataContext = viewModel;
         }
@@ -99,12 +101,20 @@ namespace Market_viewer
             var viewModel = DataContext as ViewModel;
             Stock ticker = new Stock(tickerName);
             viewModel?.AddNewTicker(ticker);
+            AddNewTicker.Clear();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
         //    var viewModel = DataContext as ViewModel;
         //    viewModel?.RemoveAllTickersNotFavourite();
+        }
+
+        public void ListOfStock_SelectionChanged(object sender, SelectionChangedEventArgs args)
+        {
+            Stock selectedStock = (Stock)listOfStock.SelectedItem;
+            var plotModel = selectedStock.PlotChart();
+            StockChart.Model = plotModel;
         }
     }
 }
