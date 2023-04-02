@@ -70,7 +70,10 @@ namespace Market_viewer2._0.Models
                 if (walletToUpdate != null)
                 {
                     walletToUpdate.amount -= amount;
-                    if (walletToUpdate.amount <= 0) context.Wallets.Remove(walletToUpdate);
+                    if (walletToUpdate.amount <= 0) 
+                    {
+                        context.Wallets.Remove(walletToUpdate);
+                    }
                     context.SaveChanges();
                 }
             }
@@ -96,7 +99,7 @@ namespace Market_viewer2._0.Models
             return Tickers;
         }
 
-        public ObservableCollection<Stock> MakeTickerFavourite(Stock stock) 
+        public ObservableCollection<Stock> MakeTickerFavourite(Stock stock)
         {
             Tickers = new ObservableCollection<Stock>();
             using (var context = new StockContext())
@@ -131,6 +134,24 @@ namespace Market_viewer2._0.Models
                 var RemoveListTickers = context.Tickers.Where(s => s.IsFavourite == false).ToList();
                 context.Tickers.RemoveRange(RemoveListTickers);
                 context.SaveChanges();
+            }
+        }
+
+        public bool CheckifExists(Wallet wallet)
+        {
+            using (var context = new StockContext())
+            {
+                bool walletExists = context.Wallets.Any(u => u.Ticker.Name == wallet.Ticker.Name);
+                return walletExists;
+            }
+        }
+
+        public Wallet GetExistingWallet(Wallet wallet)
+        {
+            using (var context = new StockContext())
+            {
+                Wallet existingWallet = context.Wallets.FirstOrDefault(u => u.Ticker.Name == wallet.Ticker.Name);
+                return existingWallet;
             }
         }
 

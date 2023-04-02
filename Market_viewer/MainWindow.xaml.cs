@@ -44,18 +44,26 @@ namespace Market_viewer
                 var tickerFromWallet = listOfWallet.SelectedItem as Wallet;
                 if (tickerFromWallet == null)
                 {
-                    //var tickerFromStock = listOfStock.SelectedItem as Stock;
-                    //Wallet wallet = new Wallet(tickerFromStock);
-                    //if (wallet == null)
-                    //{
+                    var tickerFromStock = listOfStock.SelectedItem as Stock;
+                    if (tickerFromStock == null)
+                    {
                         MessageBox.Show("Choose ticker");
-                    //}
-                    //else
-                    //{
-                    //    var viewModel = DataContext as ViewModel;
-                    //    viewModel?.AddNewTickerToWallet(wallet);
-                    //    viewModel?.AddAmountTicker(wallet, amount);
-                    //}
+                    }
+                    else
+                    {
+                        Wallet wallet = new Wallet(tickerFromStock);
+                        var viewModel = DataContext as ViewModel;
+                        if (viewModel.CheckifExists(wallet))
+                        {
+                            wallet = viewModel?.GetExistingWallet(wallet);
+                            viewModel?.AddAmountTicker(wallet, amount);
+                        }
+                        else 
+                        {
+                            viewModel?.AddNewTickerToWallet(wallet);
+                            viewModel?.AddAmountTicker(wallet, amount);
+                        }
+                    }
                 }
                 else
                 {
