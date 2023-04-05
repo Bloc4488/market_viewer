@@ -147,9 +147,11 @@ namespace Market_viewer
 
         public void ListOfStock_SelectionChanged(object sender, SelectionChangedEventArgs args)
         {
-            /*Stock selectedStock = (Stock)listOfStock.SelectedItem;
-            var plotModel = selectedStock.PlotChart();
-            StockChart.Model = plotModel;*/
+            Stock selectedStock = (Stock)listOfStock.SelectedItem;
+            StockApi.SetUrl(selectedStock);
+
+            var plotModel = selectedStock.PlotChart(StockApi);
+            StockChart.Model = plotModel;
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

@@ -1,11 +1,13 @@
-﻿using OxyPlot.Series;
-using OxyPlot;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using OxyPlot.Series;
+using OxyPlot;
+using Newtonsoft.Json.Linq;
+using OxyPlot.Axes;
 
 namespace Market_viewer2._0.Models
 {
@@ -55,19 +57,31 @@ namespace Market_viewer2._0.Models
             }
         }
 
-        public PlotModel PlotChart()
+        public PlotModel PlotChart(Api StockApi)
         {
             var plotModel = new PlotModel();
 
             var series = new LineSeries();
-            for (int i = 0; i < 7; i++)
+
+            StockApi.DownloadData(this);
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    series.Points.Add(new DataPoint(i, Convert.ToDouble(StockDataList[i].Open)));
+            //}
+
+            int i = 0;
+            foreach (var item in StockDataList)
             {
-                series.Points.Add(new DataPoint(i, i * i));
+                series.Points.Add(new DataPoint(DateTimeAxis.ToDouble(item.Date), Convert.ToDouble(StockDataList[i].Open)));
+                i++;
             }
 
             plotModel.Series.Add(series);
 
             plotModel.Title = this.Name;
+
+            plotModel.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "dd/MM" });
+
 
             return plotModel;
         }

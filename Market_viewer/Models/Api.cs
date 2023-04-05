@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Printing.IndexedProperties;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
@@ -10,7 +11,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Market_viewer2._0.Models
 {
-    class Api
+    public class Api
     {
         private readonly string datatype;
         private readonly string outputsize;
@@ -26,7 +27,7 @@ namespace Market_viewer2._0.Models
         {
             apiUrl = $"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={stock.Name}" +
                 $"&apikey={key}&datatype={datatype}&outputsize{outputsize}";
-        } 
+        }
 
         public void DownloadData(Stock stock)
         {
@@ -39,11 +40,15 @@ namespace Market_viewer2._0.Models
 
                 using (System.IO.StringReader reader = new System.IO.StringReader(data))
                 {
+                    reader.ReadLine(); //skipping first line
                     while (null != (line = reader.ReadLine()))
                     {
                         StockDataPoint point = new StockDataPoint();
                         string[] elements = line.Split(',');
-                        point.Date = elements[0];
+
+                        DateTime parsedDate = DateTime.ParseExact(elements[0], "yyyy-MM-dd", null);
+                        Console.WriteLine(parsedDate);
+                        point.Date = parsedDate;
                         point.Open = elements[1];
                         point.High = elements[2];
                         point.Low = elements[3];

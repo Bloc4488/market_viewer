@@ -10,7 +10,7 @@ namespace Market_viewer2._0.Models
     public class StockDataPoint
     {
         public int ID { get; set; }
-        public string Date { get; set; }
+        public DateTime Date { get; set; }
         public string Open { get; set; }
         public string High { get; set; }
         public string Low { get; set; }
@@ -18,5 +18,10 @@ namespace Market_viewer2._0.Models
         public string Adj_close { get; set; }
         public string Volume { get; set; }
         public string Dividend { get; set; }
+
+        public void PrintInfo()
+        {
+            Console.WriteLine(ID.ToString()+Date+Open+High+Low+Close+Adj_close+Volume+Dividend);
+        }
     }
 }
