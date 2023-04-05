@@ -17,15 +17,15 @@ namespace Market_viewer2._0.Models
 
         public int tickerId { get; set; }
 
-        public virtual Stock Ticker { get; set; }
-        
+        public Stock Ticker { get; set; }
+
         public Wallet() { }
 
-        public Wallet(Stock ticker)
+        public Wallet(Stock ticker, double value)
         {
             Ticker = ticker;
             tickerId = ticker.id;
-            amount = 0;
+            amount = value;
         }
     }
 }

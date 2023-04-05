@@ -65,18 +65,8 @@ namespace Market_viewer2._0.Models
 
             var wallets = new List<Wallet>
             {
-                new Wallet()
-                {
-                    amount = 0.6,
-                    Ticker = ticker_db[0],
-                    tickerId = ticker_db[0].id                                        
-                },
-                new Wallet()
-                {
-                    amount = 2.6,
-                    Ticker = ticker_db[1],
-                    tickerId = ticker_db[1].id
-                }
+                new Wallet(ticker_db[0], 0.6),
+                new Wallet(ticker_db[1], 2.6)
             };
             wallets.ForEach(s =>  context.Wallets.Add(s));
             context.SaveChanges();

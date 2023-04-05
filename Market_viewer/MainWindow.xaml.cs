@@ -51,7 +51,7 @@ namespace Market_viewer
                     }
                     else
                     {
-                        Wallet wallet = new Wallet(tickerFromStock);
+                        Wallet wallet = new Wallet(tickerFromStock, 0);
                         var viewModel = DataContext as ViewModel;
                         if (viewModel.CheckifExists(wallet))
                         {
