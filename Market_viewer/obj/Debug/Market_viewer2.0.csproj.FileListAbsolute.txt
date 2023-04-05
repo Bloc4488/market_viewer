@@ -55,3 +55,9 @@ D:\GIT\market_viewer\Market_viewer\bin\Debug\System.Runtime.CompilerServices.Uns
 D:\GIT\market_viewer\Market_viewer\bin\Debug\System.Text.Encodings.Web.xml
 D:\GIT\market_viewer\Market_viewer\obj\Debug\Market_viewer2._0.Migrations.IntialCreate.resources
 D:\GIT\market_viewer\Market_viewer\obj\Debug\Market_viewer2.0_Content.g.cs
+D:\GIT\market_viewer\Market_viewer\bin\Debug\OxyPlot.dll
+D:\GIT\market_viewer\Market_viewer\bin\Debug\OxyPlot.Wpf.dll
+D:\GIT\market_viewer\Market_viewer\bin\Debug\OxyPlot.Wpf.Shared.dll
+D:\GIT\market_viewer\Market_viewer\bin\Debug\OxyPlot.xml
+D:\GIT\market_viewer\Market_viewer\bin\Debug\OxyPlot.Wpf.xml
+D:\GIT\market_viewer\Market_viewer\bin\Debug\OxyPlot.Wpf.Shared.xml

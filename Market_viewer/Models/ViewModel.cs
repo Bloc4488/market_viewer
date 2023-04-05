@@ -39,7 +39,6 @@ namespace Market_viewer2._0.Models
             return Wallets;
         }
 
-        // Find mistаke here
         public ObservableCollection<Wallet> AddAmountTicker(Wallet wallet, double amount)
         {
             var walletToUpdate = context.Wallets.Find(wallet.id);

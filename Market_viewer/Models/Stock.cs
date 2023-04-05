@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OxyPlot.Series;
+using OxyPlot;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -51,6 +53,23 @@ namespace Market_viewer2._0.Models
             {
                 name = value;
             }
+        }
+
+        public PlotModel PlotChart()
+        {
+            var plotModel = new PlotModel();
+
+            var series = new LineSeries();
+            for (int i = 0; i < 7; i++)
+            {
+                series.Points.Add(new DataPoint(i, i * i));
+            }
+
+            plotModel.Series.Add(series);
+
+            plotModel.Title = this.Name;
+
+            return plotModel;
         }
     }
 }

@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using OxyPlot;
 using Market_viewer2._0.Models;
 
 namespace Market_viewer
@@ -21,9 +22,11 @@ namespace Market_viewer
     public partial class MainWindow : Window
     {
 
+        private Api StockApi;
         public MainWindow()
         {
             InitializeComponent();
+            StockApi = new Api();
             var viewModel = new ViewModel();
             DataContext = viewModel;
         }
@@ -64,11 +67,13 @@ namespace Market_viewer
                             viewModel?.AddAmountTicker(wallet, amount);
                         }
                     }
+                    listOfStock.SelectedItem = null;
                 }
                 else
                 {
                     var viewModel = DataContext as ViewModel;
                     viewModel?.AddAmountTicker(tickerFromWallet, amount);
+                    listOfWallet.SelectedItem = null;
                 }
             }
             AmountOfTickerToAddOrMinus.Text = "";
@@ -97,6 +102,7 @@ namespace Market_viewer
                     var viewModel = DataContext as ViewModel;
                     viewModel?.MinusAmountTicker(ticker, amount);
                 }
+                listOfWallet.SelectedItem = null;
             }
             AmountOfTickerToAddOrMinus.Text = "";
         }
@@ -121,6 +127,7 @@ namespace Market_viewer
                 var viewModel = DataContext as ViewModel;
                 viewModel?.MakeTickerFavourite(ticker);
             }
+            listOfStock.SelectedItem = null;
         }
 
         private void btnRemoveFavouriteTicker_Click(object sender, RoutedEventArgs e)
@@ -135,6 +142,14 @@ namespace Market_viewer
                 var viewModel = DataContext as ViewModel;
                 viewModel?.RemoveTickerFavourite(ticker);
             }
+            listOfStock.SelectedItem = null;
+        }
+
+        public void ListOfStock_SelectionChanged(object sender, SelectionChangedEventArgs args)
+        {
+            /*Stock selectedStock = (Stock)listOfStock.SelectedItem;
+            var plotModel = selectedStock.PlotChart();
+            StockChart.Model = plotModel;*/
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
