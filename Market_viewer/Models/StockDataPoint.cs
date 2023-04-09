@@ -18,6 +18,8 @@ namespace Market_viewer2._0.Models
         public string Adj_close { get; set; }
         public string Volume { get; set; }
         public string Dividend { get; set; }
+        public int tickerId { get; set; }
+        public Stock Ticker { get; set; }
 
         public void PrintInfo()
         {

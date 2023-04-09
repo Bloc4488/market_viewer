@@ -18,6 +18,8 @@
                 <DataTemplate>
                     <WrapPanel>
                         <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
+                        <TextBlock Text=", "/>
+                        <TextBlock Text="{Binding IsFavourite}" />
                     </WrapPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

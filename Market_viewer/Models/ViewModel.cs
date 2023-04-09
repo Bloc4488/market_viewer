@@ -114,6 +114,11 @@ namespace Market_viewer2._0.Models
         public void RemoveAllTickersNotFavourite()
         {
             var RemoveListTickers = context.Tickers.Where(s => s.IsFavourite == false).ToList();
+            foreach (var ticker in RemoveListTickers) 
+            {
+                if (ticker.StockDataList == null) continue;
+                context.StockDataPoints.RemoveRange(ticker.StockDataList);
+            }
             context.Tickers.RemoveRange(RemoveListTickers);
             context.SaveChanges();
         }

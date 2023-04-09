@@ -23,14 +23,16 @@ namespace Market_viewer2._0.Models
 
         public ICollection<Wallet> Wallets { get; set; }
 
-        public Stock() { }
+        public Stock() 
+        {
+            StockDataList = new List<StockDataPoint>();
+        }
 
         public Stock(string ticker)
         {
             this.name = ticker;
             this.isFavourite = false;
             StockDataList = new List<StockDataPoint>();
-
         }
 
         public bool IsFavourite
@@ -63,10 +65,10 @@ namespace Market_viewer2._0.Models
 
             var series = new LineSeries();
 
-            StockApi.DownloadData(this);
+            if (this.StockDataList.Count == 0) StockApi.DownloadData(this);
             //for (int i = 0; i < 100; i++)
             //{
-            //    series.Points.Add(new DataPoint(i, Convert.ToDouble(StockDataList[i].Open)));
+            //   series.Points.Add(new DataPoint(i, Convert.ToDouble(StockDataList[i].Open)));
             //}
 
             int i = 0;

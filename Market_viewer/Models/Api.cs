@@ -26,7 +26,7 @@ namespace Market_viewer2._0.Models
         public void SetUrl(Stock stock)
         {
             apiUrl = $"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={stock.Name}" +
-                $"&apikey={key}&datatype={datatype}&outputsize{outputsize}";
+                $"&apikey={key}&datatype={datatype}&outputsize={outputsize}";
         }
 
         public void DownloadData(Stock stock)
@@ -56,6 +56,8 @@ namespace Market_viewer2._0.Models
                         point.Adj_close = elements[5];
                         point.Volume = elements[6];
                         point.Dividend = elements[7];
+                        point.tickerId = stock.id;
+                        point.Ticker = stock;
 
                         stock.StockDataList.Add(point);
                     }

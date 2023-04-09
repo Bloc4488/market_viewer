@@ -32,6 +32,10 @@ namespace Market_viewer2._0.Models
                 .HasKey(p => p.ID)
                 .Property(e => e.ID)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            modelBuilder.Entity<StockDataPoint>()
+                .HasRequired(w => w.Ticker)
+                .WithMany(w => w.StockDataList)
+                .HasForeignKey(w => w.tickerId);
             modelBuilder.Entity<Wallet>()
                 .HasKey(p => p.id)
                 .Property(e => e.id)

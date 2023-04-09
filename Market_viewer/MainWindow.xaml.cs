@@ -148,6 +148,10 @@ namespace Market_viewer
         public void ListOfStock_SelectionChanged(object sender, SelectionChangedEventArgs args)
         {
             Stock selectedStock = (Stock)listOfStock.SelectedItem;
+            if (selectedStock == null)
+            {
+                return;
+            }
             StockApi.SetUrl(selectedStock);
 
             var plotModel = selectedStock.PlotChart(StockApi);
