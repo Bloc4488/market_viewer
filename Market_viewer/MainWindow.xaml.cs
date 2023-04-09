@@ -115,36 +115,6 @@ namespace Market_viewer
             viewModel?.AddNewTicker(ticker);
         }
 
-        private void btnMakeFavouriteTicker_Click(object sender, RoutedEventArgs e)
-        {
-            var ticker = listOfStock.SelectedItem as Stock;
-            if (ticker == null)
-            {
-                MessageBox.Show("Choose ticker");
-            }
-            else
-            {
-                var viewModel = DataContext as ViewModel;
-                viewModel?.MakeTickerFavourite(ticker);
-            }
-            listOfStock.SelectedItem = null;
-        }
-
-        private void btnRemoveFavouriteTicker_Click(object sender, RoutedEventArgs e)
-        {
-            var ticker = listOfStock.SelectedItem as Stock;
-            if (ticker == null)
-            {
-                MessageBox.Show("Choose ticker");
-            }
-            else
-            {
-                var viewModel = DataContext as ViewModel;
-                viewModel?.RemoveTickerFavourite(ticker);
-            }
-            listOfStock.SelectedItem = null;
-        }
-
         public void ListOfStock_SelectionChanged(object sender, SelectionChangedEventArgs args)
         {
             Stock selectedStock = (Stock)listOfStock.SelectedItem;
@@ -156,6 +126,25 @@ namespace Market_viewer
 
             var plotModel = selectedStock.PlotChart(StockApi);
             StockChart.Model = plotModel;
+        }
+
+        private void ImageMakeOrRemoveFavourite_Click(object sender, MouseButtonEventArgs e)
+        {
+            var clickedimage = sender as Image;
+            if (clickedimage != null)
+            {
+                var ticker = clickedimage.DataContext as Stock;
+                if (ticker.IsFavourite == true)
+                {
+                    var viewModel = DataContext as ViewModel;
+                    viewModel?.RemoveTickerFavourite(ticker);
+                }
+                else
+                {
+                    var viewModel = DataContext as ViewModel;
+                    viewModel?.MakeTickerFavourite(ticker);
+                }
+            }
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

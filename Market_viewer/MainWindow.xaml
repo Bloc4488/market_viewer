@@ -8,23 +8,22 @@
         xmlns:local="clr-namespace:Market_viewer"
         mc:Ignorable="d"
         Title="Stock application" Height="450" Width="800">
-    <Grid Margin="0,0,0,20">
+    <Grid Background="SteelBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="159*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="listOfStock" SelectionChanged="ListOfStock_SelectionChanged" SelectionMode="Single" ItemsSource="{Binding Tickers}" Margin="12,85,0,10" HorizontalAlignment="Left" Width="68">
+        <ListBox Background="Gray"  x:Name="listOfStock" SelectionChanged="ListOfStock_SelectionChanged" SelectionMode="Single" ItemsSource="{Binding Tickers}" Margin="10,85,0,10" HorizontalAlignment="Left" Width="103">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
+                        <Image MaxWidth="20" MaxHeight="20" Source="{Binding Image}" MouseDown="ImageMakeOrRemoveFavourite_Click"/>
                         <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
-                        <TextBlock Text=", "/>
-                        <TextBlock Text="{Binding IsFavourite}" />
                     </WrapPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <ListView x:Name="listOfWallet" ItemsSource="{Binding Wallets}" Margin="0,10,25,10" RenderTransformOrigin="0.533,0.492" HorizontalAlignment="Right" Width="75">
+        <ListView Background="Gray" x:Name="listOfWallet" ItemsSource="{Binding Wallets}" Margin="0,10,10,10" RenderTransformOrigin="0.533,0.492" HorizontalAlignment="Right" Width="115">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <WrapPanel>
@@ -35,13 +34,11 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button Click="btnAddSelectedItemAmount_Click" Margin="0,0,230,15" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="95">Dodaj</Button>
-        <Button Click="btnMinusSelectedItemAmount_Click" Margin="0,0,129,15" HorizontalAlignment="Right" Width="95" Height="30" VerticalAlignment="Bottom">Usun</Button>
-        <TextBox HorizontalAlignment="Right" Margin="0,0,129,53" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="196" x:Name="AmountOfTickerToAddOrMinus"/>
-        <TextBox Margin="12,14,0,0" TextWrapping="Wrap" x:Name="AddNewTicker" HorizontalAlignment="Left" Width="68" Height="20" VerticalAlignment="Top"/>
-        <Button Click="btnAddTickerToTickers_Click"  Content="Add stock" Margin="12,39,0,0" RenderTransformOrigin="0.252,0.253" HorizontalAlignment="Left" Width="68" Height="21" VerticalAlignment="Top"/>
-        <oxy:PlotView x:Name="StockChart" Margin="103,14,129,93"/>
-        <Button Content="Make Favourite" HorizontalAlignment="Left" Margin="120,357,0,0" VerticalAlignment="Top" Height="25" Width="100" Click="btnMakeFavouriteTicker_Click"/>
-        <Button Content="Remove Favourite" HorizontalAlignment="Left" Margin="120,317,0,0" VerticalAlignment="Top" Width="100" Height="25" Click="btnRemoveFavouriteTicker_Click"/>
+        <Button Click="btnAddSelectedItemAmount_Click" Margin="0,0,258,15" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="95">Buy</Button>
+        <Button Click="btnMinusSelectedItemAmount_Click" Margin="0,0,158,15" HorizontalAlignment="Right" Width="95" Height="30" VerticalAlignment="Bottom">Sell</Button>
+        <TextBox Background="Gray" HorizontalAlignment="Right" Margin="0,0,160,54" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="196" x:Name="AmountOfTickerToAddOrMinus"/>
+        <TextBox Background="gray" Margin="10,14,0,0" TextWrapping="Wrap" x:Name="AddNewTicker" HorizontalAlignment="Left" Width="104" Height="20" VerticalAlignment="Top"/>
+        <Button Click="btnAddTickerToTickers_Click"  Content="Add" Margin="10,39,0,0" RenderTransformOrigin="0.252,0.253" HorizontalAlignment="Left" Width="104" Height="21" VerticalAlignment="Top"/>
+        <oxy:PlotView x:Name="StockChart" Margin="140,14,160,130"/>
     </Grid>
 </Window>

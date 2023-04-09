@@ -19,6 +19,8 @@ namespace Market_viewer2._0.Models
 
         private bool isFavourite { get; set; }
 
+        private string image;
+
         public List<StockDataPoint> StockDataList { get; set; }
 
         public ICollection<Wallet> Wallets { get; set; }
@@ -32,6 +34,7 @@ namespace Market_viewer2._0.Models
         {
             this.name = ticker;
             this.isFavourite = false;
+            this.image = ImageUrl();
             StockDataList = new List<StockDataPoint>();
         }
 
@@ -57,6 +60,24 @@ namespace Market_viewer2._0.Models
             {
                 name = value;
             }
+        }
+
+        public string Image
+        {
+            get
+            {
+                return image;
+            }
+            set 
+            {
+                image = value;
+            }
+        }
+
+        public string ImageUrl()
+        {
+            if (this.IsFavourite == true) return "/Images/StarYellow.png";
+            else return "/Images/StarGray.png";
         }
 
         public PlotModel PlotChart(Api StockApi)

@@ -94,6 +94,7 @@ namespace Market_viewer2._0.Models
             Tickers = new ObservableCollection<Stock>();
             var tickerToMakeFavourite = context.Tickers.Find(stock.id);
             tickerToMakeFavourite.IsFavourite = true;
+            tickerToMakeFavourite.Image = tickerToMakeFavourite.ImageUrl();
             context.SaveChanges();
             Tickers = new ObservableCollection<Stock>(context.Tickers.ToList());
             OnPropertyChanged(nameof(Tickers));
@@ -105,6 +106,7 @@ namespace Market_viewer2._0.Models
             Tickers = new ObservableCollection<Stock>();
             var tickerToRemoveFavourite = context.Tickers.Find(stock.id);
             tickerToRemoveFavourite.IsFavourite = false;
+            tickerToRemoveFavourite.Image = tickerToRemoveFavourite.ImageUrl();
             context.SaveChanges();
             Tickers = new ObservableCollection<Stock>(context.Tickers.ToList());
             OnPropertyChanged(nameof(Tickers));
@@ -114,10 +116,22 @@ namespace Market_viewer2._0.Models
         public void RemoveAllTickersNotFavourite()
         {
             var RemoveListTickers = context.Tickers.Where(s => s.IsFavourite == false).ToList();
-            foreach (var ticker in RemoveListTickers) 
+            for (int i = RemoveListTickers.Count - 1; i >= 0; i--) 
             {
+                var ticker = RemoveListTickers[i];
                 if (ticker.StockDataList == null) continue;
-                context.StockDataPoints.RemoveRange(ticker.StockDataList);
+                if (context.Wallets.Any(w => w.Ticker.id == ticker.id))
+                {
+                    if (MessageBox.Show($"Do you want to remove {ticker.Name} from wallet?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+                    {
+                        RemoveListTickers.Remove(ticker);
+                    }
+                    else
+                    {
+                        MessageBox.Show($"You removed {context.Wallets.FirstOrDefault(w => w.Ticker.id == ticker.id).amount} {ticker.Name} from wallet.");
+                        context.StockDataPoints.RemoveRange(ticker.StockDataList);
+                    }
+                }
             }
             context.Tickers.RemoveRange(RemoveListTickers);
             context.SaveChanges();
