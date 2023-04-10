@@ -1,15 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
 using System.Windows;
+using System.Windows.Controls;
+using Market_viewer2._0;
 
 namespace Market_viewer2._0.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class ViewModel : INotifyPropertyChanged
     {
         public ObservableCollection<Wallet> Wallets { get; set; }
@@ -19,16 +21,20 @@ namespace Market_viewer2._0.Models
         private StockContext context = new StockContext();
 
         public event PropertyChangedEventHandler PropertyChanged;
-
+        /// <summary>
+        /// 
+        /// </summary>
         public ViewModel()
         {
-            using (var context = new StockContext())
-            {
-                Wallets = new ObservableCollection<Wallet>(context.Wallets.Include("Ticker").ToList());
-                Tickers = new ObservableCollection<Stock>(context.Tickers.ToList());
-            }
+            Wallets = new ObservableCollection<Wallet>(context.Wallets.Include("Ticker").ToList());
+            Tickers = new ObservableCollection<Stock>(context.Tickers.ToList());
+            GetFullAmountOfWallet();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="wallet"></param>
+        /// <returns></returns>
         public ObservableCollection<Wallet> AddNewTickerToWallet(Wallet wallet)
         {
             context.Wallets.Add(wallet);
@@ -38,7 +44,12 @@ namespace Market_viewer2._0.Models
             OnPropertyChanged(nameof(Wallets));
             return Wallets;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="wallet"></param>
+        /// <param name="amount"></param>
+        /// <returns></returns>
         public ObservableCollection<Wallet> AddAmountTicker(Wallet wallet, double amount)
         {
             var walletToUpdate = context.Wallets.Find(wallet.id);
@@ -49,17 +60,23 @@ namespace Market_viewer2._0.Models
             }
             Wallets = new ObservableCollection<Wallet>();
             Wallets = new ObservableCollection<Wallet>(context.Wallets.Include("Ticker").ToList());
+            GetFullAmountOfWallet();
             OnPropertyChanged(nameof(Wallets));
             return Wallets;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="wallet"></param>
+        /// <param name="amount"></param>
+        /// <returns></returns>
         public ObservableCollection<Wallet> MinusAmountTicker(Wallet wallet, double amount)
         {
             var walletToUpdate = context.Wallets.Find(wallet.id);
             if (walletToUpdate != null)
             {
                 walletToUpdate.amount -= amount;
-                if (walletToUpdate.amount <= 0) 
+                if (walletToUpdate.amount <= 0)
                 {
                     context.Wallets.Remove(walletToUpdate);
                 }
@@ -67,10 +84,15 @@ namespace Market_viewer2._0.Models
             }
             Wallets = new ObservableCollection<Wallet>();
             Wallets = new ObservableCollection<Wallet>(context.Wallets.Include("Ticker").ToList());
+            GetFullAmountOfWallet();
             OnPropertyChanged(nameof(Wallets));
             return Wallets;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="stock"></param>
+        /// <returns></returns>
         public ObservableCollection<Stock> AddNewTicker(Stock stock)
         {
             Tickers = new ObservableCollection<Stock>();
@@ -88,7 +110,11 @@ namespace Market_viewer2._0.Models
             OnPropertyChanged(nameof(Tickers));
             return Tickers;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="stock"></param>
+        /// <returns></returns>
         public ObservableCollection<Stock> MakeTickerFavourite(Stock stock)
         {
             Tickers = new ObservableCollection<Stock>();
@@ -100,7 +126,11 @@ namespace Market_viewer2._0.Models
             OnPropertyChanged(nameof(Tickers));
             return Tickers;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="stock"></param>
+        /// <returns></returns>
         public ObservableCollection<Stock> RemoveTickerFavourite(Stock stock)
         {
             Tickers = new ObservableCollection<Stock>();
@@ -112,11 +142,13 @@ namespace Market_viewer2._0.Models
             OnPropertyChanged(nameof(Tickers));
             return Tickers;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void RemoveAllTickersNotFavourite()
         {
             var RemoveListTickers = context.Tickers.Where(s => s.IsFavourite == false).ToList();
-            for (int i = RemoveListTickers.Count - 1; i >= 0; i--) 
+            for (int i = RemoveListTickers.Count - 1; i >= 0; i--)
             {
                 var ticker = RemoveListTickers[i];
                 if (ticker.StockDataList == null) continue;
@@ -125,6 +157,9 @@ namespace Market_viewer2._0.Models
                     if (MessageBox.Show($"Do you want to remove {ticker.Name} from wallet?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
                     {
                         RemoveListTickers.Remove(ticker);
+                        ticker.IsFavourite = true;
+                        ticker.Image = ticker.ImageUrl();
+                        MessageBox.Show($"{ticker.Name} now is in your favourite list of stocks");
                     }
                     else
                     {
@@ -136,20 +171,42 @@ namespace Market_viewer2._0.Models
             context.Tickers.RemoveRange(RemoveListTickers);
             context.SaveChanges();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="wallet"></param>
+        /// <returns></returns>
         public bool CheckifExists(Wallet wallet)
         {
             bool walletExists = context.Wallets.Any(u => u.Ticker.Name == wallet.Ticker.Name);
             return walletExists;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="wallet"></param>
+        /// <returns></returns>
         public Wallet GetExistingWallet(Wallet wallet)
         {
             Wallet existingWallet = context.Wallets.FirstOrDefault(u => u.Ticker.Name == wallet.Ticker.Name);
             return existingWallet;
         }
-
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = null) 
+        public void GetFullAmountOfWallet()
+        {
+            var FullAmountOfWallet = (TextBlock)Application.Current.MainWindow.FindName("FullAmountOfWallet");
+            double fullAmount = 0;
+            foreach(var wallet in Wallets)
+            {
+                fullAmount += (wallet.amount) * (wallet.Ticker.Price);
+            }
+            FullAmountOfWallet.Text = fullAmount.ToString() + "$";
+            OnPropertyChanged(nameof(Wallets));
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="propertyName"></param>
+        protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

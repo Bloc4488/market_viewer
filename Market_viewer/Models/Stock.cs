@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OxyPlot.Series;
-using OxyPlot;
-using Newtonsoft.Json.Linq;
+﻿using OxyPlot;
 using OxyPlot.Axes;
+using OxyPlot.Series;
+using System;
+using System.Collections.Generic;
 
 namespace Market_viewer2._0.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Stock
     {
         public int id { get; set; }
@@ -21,15 +19,22 @@ namespace Market_viewer2._0.Models
 
         private string image;
 
+        public double Price { get; set; }
+
         public List<StockDataPoint> StockDataList { get; set; }
 
         public ICollection<Wallet> Wallets { get; set; }
-
-        public Stock() 
+        /// <summary>
+        /// 
+        /// </summary>
+        public Stock()
         {
             StockDataList = new List<StockDataPoint>();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ticker"></param>
         public Stock(string ticker)
         {
             this.name = ticker;
@@ -37,49 +42,62 @@ namespace Market_viewer2._0.Models
             this.image = ImageUrl();
             StockDataList = new List<StockDataPoint>();
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public bool IsFavourite
-        { 
-            get 
-            { 
-                return isFavourite; 
-            } 
-            set 
-            { 
+        {
+            get
+            {
+                return isFavourite;
+            }
+            set
+            {
                 this.isFavourite = value;
-            } 
+            }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public string Name
         {
             get
             {
                 return name;
             }
-            set 
+            set
             {
                 name = value;
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public string Image
         {
             get
             {
                 return image;
             }
-            set 
+            set
             {
                 image = value;
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public string ImageUrl()
         {
             if (this.IsFavourite == true) return "/Images/StarYellow.png";
             else return "/Images/StarGray.png";
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="StockApi"></param>
+        /// <returns></returns>
         public PlotModel PlotChart(Api StockApi)
         {
             var plotModel = new PlotModel();
@@ -87,10 +105,6 @@ namespace Market_viewer2._0.Models
             var series = new LineSeries();
 
             if (this.StockDataList.Count == 0) StockApi.DownloadData(this);
-            //for (int i = 0; i < 100; i++)
-            //{
-            //   series.Points.Add(new DataPoint(i, Convert.ToDouble(StockDataList[i].Open)));
-            //}
 
             int i = 0;
             foreach (var item in StockDataList)

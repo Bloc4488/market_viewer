@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Market_viewer2._0.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class StockDataPoint
     {
         public int ID { get; set; }
@@ -20,10 +18,12 @@ namespace Market_viewer2._0.Models
         public string Dividend { get; set; }
         public int tickerId { get; set; }
         public Stock Ticker { get; set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
         public void PrintInfo()
         {
-            Console.WriteLine(ID.ToString()+Date+Open+High+Low+Close+Adj_close+Volume+Dividend);
+            Console.WriteLine(ID.ToString() + Date + Open + High + Low + Close + Adj_close + Volume + Dividend);
         }
     }
 }

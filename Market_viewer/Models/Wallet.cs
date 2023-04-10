@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
-
-namespace Market_viewer2._0.Models
+﻿namespace Market_viewer2._0.Models
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class Wallet
     {
         public int id { get; set; }
@@ -20,7 +14,11 @@ namespace Market_viewer2._0.Models
         public Stock Ticker { get; set; }
 
         public Wallet() { }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ticker"></param>
+        /// <param name="value"></param>
         public Wallet(Stock ticker, double value)
         {
             Ticker = ticker;

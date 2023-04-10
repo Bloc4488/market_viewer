@@ -1,27 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using Market_viewer2._0.Models;
+using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Documents.Serialization;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using OxyPlot;
-using Market_viewer2._0.Models;
 
 namespace Market_viewer
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public partial class MainWindow : Window
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
         private Api StockApi;
         public MainWindow()
         {
@@ -30,7 +23,11 @@ namespace Market_viewer
             var viewModel = new ViewModel();
             DataContext = viewModel;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAddSelectedItemAmount_Click(object sender, RoutedEventArgs e)
         {
             double amount = 0.0;
@@ -61,7 +58,7 @@ namespace Market_viewer
                             wallet = viewModel?.GetExistingWallet(wallet);
                             viewModel?.AddAmountTicker(wallet, amount);
                         }
-                        else 
+                        else
                         {
                             viewModel?.AddNewTickerToWallet(wallet);
                             viewModel?.AddAmountTicker(wallet, amount);
@@ -78,7 +75,11 @@ namespace Market_viewer
             }
             AmountOfTickerToAddOrMinus.Text = "";
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnMinusSelectedItemAmount_Click(object sender, RoutedEventArgs e)
         {
             double amount = 0.0;
@@ -106,15 +107,34 @@ namespace Market_viewer
             }
             AmountOfTickerToAddOrMinus.Text = "";
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAddTickerToTickers_Click(object sender, RoutedEventArgs e)
         {
-            var tickerName = Convert.ToString(AddNewTicker.Text);
-            var viewModel = DataContext as ViewModel;
+            var tickerName = Convert.ToString(AddNewTicker.Text).ToUpper();
             Stock ticker = new Stock(tickerName);
+            try
+            {
+                StockApi.DownloadData(ticker);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("No such stock, please write right name");
+                AddNewTicker.Text = null;
+                return;
+            }
+            var viewModel = DataContext as ViewModel;
             viewModel?.AddNewTicker(ticker);
+            AddNewTicker.Text = null;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
         public void ListOfStock_SelectionChanged(object sender, SelectionChangedEventArgs args)
         {
             Stock selectedStock = (Stock)listOfStock.SelectedItem;
@@ -127,7 +147,11 @@ namespace Market_viewer
             var plotModel = selectedStock.PlotChart(StockApi);
             StockChart.Model = plotModel;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ImageMakeOrRemoveFavourite_Click(object sender, MouseButtonEventArgs e)
         {
             var clickedimage = sender as Image;
@@ -146,7 +170,11 @@ namespace Market_viewer
                 }
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             var viewModel = DataContext as ViewModel;

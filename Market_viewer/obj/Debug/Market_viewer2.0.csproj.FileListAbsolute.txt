@@ -61,3 +61,12 @@ D:\GIT\market_viewer\Market_viewer\bin\Debug\OxyPlot.Wpf.Shared.dll
 D:\GIT\market_viewer\Market_viewer\bin\Debug\OxyPlot.xml
 D:\GIT\market_viewer\Market_viewer\bin\Debug\OxyPlot.Wpf.xml
 D:\GIT\market_viewer\Market_viewer\bin\Debug\OxyPlot.Wpf.Shared.xml
+D:\GIT\market_viewer\Market_viewer\bin\Debug\MaterialDesignColors.dll
+D:\GIT\market_viewer\Market_viewer\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\GIT\market_viewer\Market_viewer\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\GIT\market_viewer\Market_viewer\bin\Debug\MaterialDesignColors.pdb
+D:\GIT\market_viewer\Market_viewer\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\GIT\market_viewer\Market_viewer\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\GIT\market_viewer\Market_viewer\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\GIT\market_viewer\Market_viewer\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\GIT\market_viewer\Market_viewer\obj\Debug\App.baml

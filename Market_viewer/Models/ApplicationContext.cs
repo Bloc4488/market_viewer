@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
-using System.Data.Entity.Migrations;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-using System.Xml.Linq;
 
 
 namespace Market_viewer2._0.Models
 {
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class StockContext : DbContext
     {
-         
-        public StockContext() : base("name = StockDB") 
+
+        public StockContext() : base("name = StockDB")
         {
             this.Configuration.LazyLoadingEnabled = false;
         }
@@ -25,7 +20,10 @@ namespace Market_viewer2._0.Models
         public DbSet<Stock> Tickers { get; set; }
         public DbSet<StockDataPoint> StockDataPoints { get; set; }
         public DbSet<Wallet> Wallets { get; set; }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<StockDataPoint>()
@@ -50,10 +48,15 @@ namespace Market_viewer2._0.Models
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
         }
     }
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class StockDbInitializer : DropCreateDatabaseAlways<StockContext>
     {
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="context"></param>
         protected override void Seed(StockContext context)
         {
             var tickers = new List<Stock>
@@ -72,7 +75,7 @@ namespace Market_viewer2._0.Models
                 new Wallet(ticker_db[0], 0.6),
                 new Wallet(ticker_db[1], 2.6)
             };
-            wallets.ForEach(s =>  context.Wallets.Add(s));
+            wallets.ForEach(s => context.Wallets.Add(s));
             context.SaveChanges();
         }
     }
