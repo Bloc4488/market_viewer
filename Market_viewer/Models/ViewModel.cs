@@ -5,7 +5,6 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
-using Market_viewer2._0;
 
 namespace Market_viewer2._0.Models
 {
@@ -200,7 +199,6 @@ namespace Market_viewer2._0.Models
                 fullAmount += (wallet.amount) * (wallet.Ticker.Price);
             }
             FullAmountOfWallet.Text = fullAmount.ToString() + "$";
-            OnPropertyChanged(nameof(Wallets));
         }
         /// <summary>
         /// 

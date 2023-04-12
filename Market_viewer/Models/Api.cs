@@ -63,9 +63,10 @@ namespace Market_viewer2._0.Models
                         point.Dividend = elements[7];
                         point.tickerId = stock.id;
                         point.Ticker = stock;
-                        stock.Price = Convert.ToDouble(elements[5]);
+
                         stock.StockDataList.Add(point);
                     }
+                    stock.Price = Convert.ToDouble(stock.StockDataList[0].Adj_close);
                 }
             }
         }

@@ -3,6 +3,9 @@ using OxyPlot.Axes;
 using OxyPlot.Series;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace Market_viewer2._0.Models
 {
@@ -100,18 +103,22 @@ namespace Market_viewer2._0.Models
         /// <returns></returns>
         public PlotModel PlotChart(Api StockApi)
         {
+            double MaxPrice = 0, MinPrice = int.MaxValue, CurrentPrice;
+
             var plotModel = new PlotModel();
 
             var series = new LineSeries();
 
             if (this.StockDataList.Count == 0) StockApi.DownloadData(this);
 
-            int i = 0;
             foreach (var item in StockDataList)
             {
-                series.Points.Add(new DataPoint(DateTimeAxis.ToDouble(item.Date), Convert.ToDouble(StockDataList[i].Open)));
-                i++;
+                series.Points.Add(new DataPoint(DateTimeAxis.ToDouble(item.Date), Convert.ToDouble(item.Open)));
+                if (MaxPrice < Convert.ToDouble(item.Open)) MaxPrice = Convert.ToDouble(item.Open);
+                if (MinPrice > Convert.ToDouble(item.Open)) MinPrice = Convert.ToDouble(item.Open);
             }
+
+            CurrentPrice = Convert.ToDouble(StockDataList.First().Adj_close);
 
             plotModel.Series.Add(series);
 
@@ -119,6 +126,13 @@ namespace Market_viewer2._0.Models
 
             plotModel.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "dd/MM" });
 
+            var MaxPriceStock = (TextBlock)Application.Current.MainWindow.FindName("MaxPriceSelectedStock");
+            var MinPriceStock = (TextBlock)Application.Current.MainWindow.FindName("MinPriceSelectedStock");
+            var CurrentPriceStock = (TextBlock)Application.Current.MainWindow.FindName("CurrentPriceSelectedStock");
+
+            MaxPriceStock.Text = MaxPrice.ToString() + "$";
+            MinPriceStock.Text = MinPrice.ToString() + "$";
+            CurrentPriceStock.Text = CurrentPrice.ToString() + "$";
 
             return plotModel;
         }
