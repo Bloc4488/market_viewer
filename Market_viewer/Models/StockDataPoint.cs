@@ -3,7 +3,7 @@
 namespace Market_viewer2._0.Models
 {
     /// <summary>
-    /// 
+    /// Class represents single data point of stock prices. Contains also additional data returned by API.
     /// </summary>
     public class StockDataPoint
     {
@@ -18,8 +18,9 @@ namespace Market_viewer2._0.Models
         public string Dividend { get; set; }
         public int tickerId { get; set; }
         public Stock Ticker { get; set; }
+
         /// <summary>
-        /// 
+        /// Debugging purpose function for returning info about a data point. 
         /// </summary>
         public void PrintInfo()
         {

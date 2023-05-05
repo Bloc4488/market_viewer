@@ -27,17 +27,16 @@ namespace Market_viewer2._0.Models
         public List<StockDataPoint> StockDataList { get; set; }
 
         public ICollection<Wallet> Wallets { get; set; }
-        /// <summary>
-        /// 
-        /// </summary>
+
         public Stock()
         {
             StockDataList = new List<StockDataPoint>();
         }
+
         /// <summary>
-        /// 
+        /// The constructor sets initial parameters of the stock class.
         /// </summary>
-        /// <param name="ticker"></param>
+        /// <param name="ticker">The ticker of the stock in intrest.</param>
         public Stock(string ticker)
         {
             this.name = ticker;
@@ -46,7 +45,7 @@ namespace Market_viewer2._0.Models
             StockDataList = new List<StockDataPoint>();
         }
         /// <summary>
-        /// 
+        /// Checks if the stock is marked as favourite.
         /// </summary>
         public bool IsFavourite
         {
@@ -60,7 +59,7 @@ namespace Market_viewer2._0.Models
             }
         }
         /// <summary>
-        /// 
+        /// Returns the name of the class instance.
         /// </summary>
         public string Name
         {
@@ -74,7 +73,7 @@ namespace Market_viewer2._0.Models
             }
         }
         /// <summary>
-        /// 
+        /// Returns the image of the class instance.
         /// </summary>
         public string Image
         {
@@ -87,8 +86,9 @@ namespace Market_viewer2._0.Models
                 image = value;
             }
         }
+
         /// <summary>
-        /// 
+        /// Sets an icon if the class' favourite status has changed.
         /// </summary>
         /// <returns></returns>
         public string ImageUrl()
@@ -96,10 +96,11 @@ namespace Market_viewer2._0.Models
             if (this.IsFavourite == true) return "/Images/StarYellow.png";
             else return "/Images/StarGray.png";
         }
+
         /// <summary>
-        /// 
+        /// Plots chart of the stock given an API connection.
         /// </summary>
-        /// <param name="StockApi"></param>
+        /// <param name="StockApi">Initialized with stock API connector.</param>
         /// <returns></returns>
         public PlotModel PlotChart(Api StockApi)
         {

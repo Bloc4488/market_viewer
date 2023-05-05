@@ -4,7 +4,7 @@ using System.Net;
 namespace Market_viewer2._0.Models
 {
     /// <summary>
-    /// 
+    /// Class for managing external "Alphavantage" API. The API is used to retrieve information about set stock.
     /// </summary>
     public class Api
     {
@@ -12,10 +12,11 @@ namespace Market_viewer2._0.Models
         private readonly string outputsize;
         private readonly string key;
         private string apiUrl = string.Empty;
+
         /// <summary>
-        /// 
+        /// Constructor with basic API parameters.
         /// </summary>
-        /// <param name="apiKey"></param>
+        /// <param name="apiKey">Key needed to authorize API communication. It can be obtained from the alphavantage page.</param>
         public Api(string apiKey = "01IC5EI68QVQTUPS")
         {
             datatype = "csv"; // another possibitity is json
@@ -23,16 +24,16 @@ namespace Market_viewer2._0.Models
             key = apiKey;
         }
         /// <summary>
-        /// 
+        /// Sets url to site from which the datapoints will be returned.
         /// </summary>
-        /// <param name="stock"></param>
+        /// <param name="stock">Ticker to the stock of concerned.</param>
         public void SetUrl(Stock stock)
         {
             apiUrl = $"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={stock.Name}" +
                 $"&apikey={key}&datatype={datatype}&outputsize={outputsize}";
         }
         /// <summary>
-        /// 
+        /// Downloads price datapoints of the given stock and sets it atributes to obtained data.
         /// </summary>
         /// <param name="stock"></param>
         public void DownloadData(Stock stock)

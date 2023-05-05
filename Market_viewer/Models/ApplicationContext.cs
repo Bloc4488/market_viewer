@@ -7,7 +7,7 @@ using System.Linq;
 namespace Market_viewer2._0.Models
 {
     /// <summary>
-    /// 
+    /// Class connects database entities to the classes included in the project.
     /// </summary>
     public class StockContext : DbContext
     {
@@ -20,10 +20,11 @@ namespace Market_viewer2._0.Models
         public DbSet<Stock> Tickers { get; set; }
         public DbSet<StockDataPoint> StockDataPoints { get; set; }
         public DbSet<Wallet> Wallets { get; set; }
+
         /// <summary>
-        /// 
+        /// Sets model of database by creating entities.
         /// </summary>
-        /// <param name="modelBuilder"></param>
+        /// <param name="modelBuilder">Required builder for the model</param>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<StockDataPoint>()
@@ -49,14 +50,14 @@ namespace Market_viewer2._0.Models
         }
     }
     /// <summary>
-    /// 
+    /// Initializes database so that app starts with sample data present.
     /// </summary>
     public class StockDbInitializer : DropCreateDatabaseAlways<StockContext>
     {
         /// <summary>
-        /// 
+        /// Seed funtion for given context linkage.
         /// </summary>
-        /// <param name="context"></param>
+        /// <param name="context">Context for entities and the class</param>
         protected override void Seed(StockContext context)
         {
             var tickers = new List<Stock>
