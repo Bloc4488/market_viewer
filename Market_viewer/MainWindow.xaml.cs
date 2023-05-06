@@ -8,12 +8,12 @@ using System.Windows.Input;
 namespace Market_viewer
 {
     /// <summary>
-    /// 
+    /// Main class
     /// </summary>
     public partial class MainWindow : Window
     {
         /// <summary>
-        /// 
+        /// Initialization of class Api object
         /// </summary>
         private Api StockApi;
         public MainWindow()
@@ -24,7 +24,7 @@ namespace Market_viewer
             DataContext = viewModel;
         }
         /// <summary>
-        /// 
+        /// Action for the "Buy" button. This method adds amount to existing wallet or creats new wallet and adds amount to this wallet. 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -76,7 +76,7 @@ namespace Market_viewer
             AmountOfTickerToAddOrMinus.Text = "";
         }
         /// <summary>
-        /// 
+        /// Action for the "Sell" button. This method removes amount from existing wallet and removes this wallet if amount is less that zero. 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -108,7 +108,7 @@ namespace Market_viewer
             AmountOfTickerToAddOrMinus.Text = "";
         }
         /// <summary>
-        /// 
+        /// Action for the "Add" button. This method adds to list of stocks new stock.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -131,7 +131,7 @@ namespace Market_viewer
             AddNewTicker.Text = null;
         }
         /// <summary>
-        /// 
+        /// Method to show chart information of chosen stock.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="args"></param>
@@ -148,7 +148,7 @@ namespace Market_viewer
             StockChart.Model = plotModel;
         }
         /// <summary>
-        /// 
+        /// Method to change image of star if stock adds or removes from list of favourite stocks. 
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -171,7 +171,7 @@ namespace Market_viewer
             }
         }
         /// <summary>
-        /// 
+        /// Method to remove all not favourite stocks.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

@@ -15,7 +15,7 @@
 
         public Wallet() { }
         /// <summary>
-        /// 
+        /// The constructor sets initial parameters of the wallet class.
         /// </summary>
         /// <param name="ticker">Ticker of the stock of intrest.</param>
         /// <param name="value">Price value of the given stock</param>

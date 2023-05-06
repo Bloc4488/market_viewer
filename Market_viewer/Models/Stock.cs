@@ -10,7 +10,7 @@ using System.Windows.Controls;
 namespace Market_viewer2._0.Models
 {
     /// <summary>
-    /// 
+    /// Class represents stock information for application.
     /// </summary>
     public class Stock
     {
