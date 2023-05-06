@@ -1,0 +1,1 @@
+Aplikacja potrzebuje zmiany czasu na komputerze na format amerykański dla poprawnej pracy API.
