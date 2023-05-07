@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context" kind="class" language="C#" prot="public">
+    <compoundname>Market_viewer2::_0::Models::StockContext</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DbContext</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a2c38b6e2d6dc7b7e37e2ef20917791f8" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; Stock &gt;</type>
+        <definition>DbSet&lt;Stock&gt; Market_viewer2._0.Models.StockContext.Tickers</definition>
+        <argsstring></argsstring>
+        <name>Tickers</name>
+        <qualifiedname>Market_viewer2._0.Models.StockContext.Tickers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" line="20" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a15e4a2744b27de5e48425d2c8dc3cd9c" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point" kindref="compound">StockDataPoint</ref> &gt;</type>
+        <definition>DbSet&lt;StockDataPoint&gt; Market_viewer2._0.Models.StockContext.StockDataPoints</definition>
+        <argsstring></argsstring>
+        <name>StockDataPoints</name>
+        <qualifiedname>Market_viewer2._0.Models.StockContext.StockDataPoints</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" line="21" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a9d5812b214ad3418577589a447a8e0dd" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>DbSet&lt; <ref refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet" kindref="compound">Wallet</ref> &gt;</type>
+        <definition>DbSet&lt;Wallet&gt; Market_viewer2._0.Models.StockContext.Wallets</definition>
+        <argsstring></argsstring>
+        <name>Wallets</name>
+        <qualifiedname>Market_viewer2._0.Models.StockContext.Wallets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" line="22" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" bodystart="22" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a998d6e35da3dcbfd1634b661a3a087d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Market_viewer2._0.Models.StockContext.StockContext</definition>
+        <argsstring>()</argsstring>
+        <name>StockContext</name>
+        <qualifiedname>Market_viewer2._0.Models.StockContext.StockContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" line="15" column="16" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a1ddc71d32e627999fb30759d9b153ec4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Market_viewer2._0.Models.StockContext.OnModelCreating</definition>
+        <argsstring>(DbModelBuilder modelBuilder)</argsstring>
+        <name>OnModelCreating</name>
+        <qualifiedname>Market_viewer2._0.Models.StockContext.OnModelCreating</qualifiedname>
+        <param>
+          <type>DbModelBuilder</type>
+          <declname>modelBuilder</declname>
+        </param>
+        <briefdescription>
+<para>Sets model of database by creating entities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>modelBuilder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Required builder for the model</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" line="28" column="33" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" bodystart="28" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class connects database entities to the classes included in the project. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DbContext</label>
+      </node>
+      <node id="1">
+        <label>Market_viewer2._0.Models.StockContext</label>
+        <link refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DbContext</label>
+      </node>
+      <node id="1">
+        <label>Market_viewer2._0.Models.StockContext</label>
+        <link refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" line="12" column="11" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/ApplicationContext.cs" bodystart="13" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a1ddc71d32e627999fb30759d9b153ec4" prot="protected" virt="non-virtual"><scope>Market_viewer2::_0::Models::StockContext</scope><name>OnModelCreating</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a998d6e35da3dcbfd1634b661a3a087d6" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Models::StockContext</scope><name>StockContext</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a15e4a2744b27de5e48425d2c8dc3cd9c" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Models::StockContext</scope><name>StockDataPoints</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a2c38b6e2d6dc7b7e37e2ef20917791f8" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Models::StockContext</scope><name>Tickers</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a9d5812b214ad3418577589a447a8e0dd" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Models::StockContext</scope><name>Wallets</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

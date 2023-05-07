@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_3e041d7882c0b736bc4e27709ce3a5a5" kind="dir">
+    <compoundname>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models</compoundname>
+    <innerfile refid="_api_8cs">Api.cs</innerfile>
+    <innerfile refid="_application_context_8cs">ApplicationContext.cs</innerfile>
+    <innerfile refid="_stock_8cs">Stock.cs</innerfile>
+    <innerfile refid="_stock_data_point_8cs">StockDataPoint.cs</innerfile>
+    <innerfile refid="_view_model_8cs">ViewModel.cs</innerfile>
+    <innerfile refid="_wallet_8cs">Wallet.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/"/>
+  </compounddef>
+</doxygen>

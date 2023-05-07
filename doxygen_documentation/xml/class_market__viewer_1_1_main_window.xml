@@ -1,0 +1,682 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_market__viewer_1_1_main_window" kind="class" language="C#" prot="public">
+    <compoundname>Market_viewer::MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Window</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Window</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Markup.IComponentConnector</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Markup.IStyleConnector</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1a1d3a85de33600cd0f886bbd644c72ed0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_market__viewer2_1_1__0_1_1_models_1_1_api" kindref="compound">Api</ref></type>
+        <definition>Api Market_viewer.MainWindow.StockApi</definition>
+        <argsstring></argsstring>
+        <name>StockApi</name>
+        <qualifiedname>Market_viewer.MainWindow.StockApi</qualifiedname>
+        <briefdescription>
+<para>Initialization of class Api object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" line="18" column="21" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1aff224e00dbcb197246093dfdc9d809f0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Market_viewer.MainWindow::_contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Market_viewer.MainWindow._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="119" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-attrib">
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1a36391545bada3242c0fddc032239dc1d" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.ListBox</type>
+        <definition>System Windows Controls ListBox Market_viewer.MainWindow::listOfStock</definition>
+        <argsstring></argsstring>
+        <name>listOfStock</name>
+        <qualifiedname>Market_viewer.MainWindow.listOfStock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="50" column="47" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1a62b62fcdcd1f6c1756931fb8d61e4095" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.ListView</type>
+        <definition>System Windows Controls ListView Market_viewer.MainWindow::listOfWallet</definition>
+        <argsstring></argsstring>
+        <name>listOfWallet</name>
+        <qualifiedname>Market_viewer.MainWindow.listOfWallet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="58" column="48" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1a0a2e1c1fa860847b57d1c891e0ae7eb0" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBlock</type>
+        <definition>System Windows Controls TextBlock Market_viewer.MainWindow::FullAmountOfWallet</definition>
+        <argsstring></argsstring>
+        <name>FullAmountOfWallet</name>
+        <qualifiedname>Market_viewer.MainWindow.FullAmountOfWallet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="66" column="49" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1aff8a91557358c48de2539294e5c665bd" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBlock</type>
+        <definition>System Windows Controls TextBlock Market_viewer.MainWindow::MaxPriceSelectedStock</definition>
+        <argsstring></argsstring>
+        <name>MaxPriceSelectedStock</name>
+        <qualifiedname>Market_viewer.MainWindow.MaxPriceSelectedStock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="74" column="49" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1a987dead2d9c0f87a20af0335acf228db" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBlock</type>
+        <definition>System Windows Controls TextBlock Market_viewer.MainWindow::MinPriceSelectedStock</definition>
+        <argsstring></argsstring>
+        <name>MinPriceSelectedStock</name>
+        <qualifiedname>Market_viewer.MainWindow.MinPriceSelectedStock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="82" column="49" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1a519aa5232826d140d33ba275178387b4" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBlock</type>
+        <definition>System Windows Controls TextBlock Market_viewer.MainWindow::CurrentPriceSelectedStock</definition>
+        <argsstring></argsstring>
+        <name>CurrentPriceSelectedStock</name>
+        <qualifiedname>Market_viewer.MainWindow.CurrentPriceSelectedStock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="90" column="49" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1a182d43197b9a7ca15022ce7a03110107" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBox</type>
+        <definition>System Windows Controls TextBox Market_viewer.MainWindow::AmountOfTickerToAddOrMinus</definition>
+        <argsstring></argsstring>
+        <name>AmountOfTickerToAddOrMinus</name>
+        <qualifiedname>Market_viewer.MainWindow.AmountOfTickerToAddOrMinus</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="98" column="47" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1a5c9f4f906057b448a99de163e2378d23" prot="package" static="no" mutable="no">
+        <type>System.Windows.Controls.TextBox</type>
+        <definition>System Windows Controls TextBox Market_viewer.MainWindow::AddNewTicker</definition>
+        <argsstring></argsstring>
+        <name>AddNewTicker</name>
+        <qualifiedname>Market_viewer.MainWindow.AddNewTicker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="106" column="47" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market__viewer_1_1_main_window_1a56d2e2ed9b43eba4829e018d7d797096" prot="package" static="no" mutable="no">
+        <type>OxyPlot.Wpf.PlotView</type>
+        <definition>OxyPlot Wpf PlotView Market_viewer.MainWindow::StockChart</definition>
+        <argsstring></argsstring>
+        <name>StockChart</name>
+        <qualifiedname>Market_viewer.MainWindow.StockChart</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="114" column="37" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1ab5f667ecb2f94f0cfb080bfa3d320c20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Market_viewer.MainWindow.MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>MainWindow</name>
+        <qualifiedname>Market_viewer.MainWindow.MainWindow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" line="19" column="16" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1a7629fbe09e56ead5ce6be600680a2f76" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer.MainWindow.ListOfStock_SelectionChanged</definition>
+        <argsstring>(object sender, SelectionChangedEventArgs args)</argsstring>
+        <name>ListOfStock_SelectionChanged</name>
+        <qualifiedname>Market_viewer.MainWindow.ListOfStock_SelectionChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SelectionChangedEventArgs</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Method to show chart information of chosen stock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" line="138" column="21" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" bodystart="138" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1a5137b0fc1e4a1926a485c459b8b0901c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer.MainWindow.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Market_viewer.MainWindow.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="126" column="21" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="126" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1a5137b0fc1e4a1926a485c459b8b0901c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer.MainWindow.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Market_viewer.MainWindow.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.i.cs" line="126" column="21" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.i.cs" bodystart="126" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1a5137b0fc1e4a1926a485c459b8b0901c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer.MainWindow.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Market_viewer.MainWindow.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Release/MainWindow.g.cs" line="91" column="21" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Release/MainWindow.g.cs" bodystart="91" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1a9cd1846605f43062c1e6e863c4efcf86" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer.MainWindow.btnAddSelectedItemAmount_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>btnAddSelectedItemAmount_Click</name>
+        <qualifiedname>Market_viewer.MainWindow.btnAddSelectedItemAmount_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Action for the &quot;Buy&quot; button. This method adds amount to existing wallet or creats new wallet and adds amount to this wallet. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" line="31" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" bodystart="31" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1affb965aef7eb88879f34306404591021" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer.MainWindow.btnMinusSelectedItemAmount_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>btnMinusSelectedItemAmount_Click</name>
+        <qualifiedname>Market_viewer.MainWindow.btnMinusSelectedItemAmount_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Action for the &quot;Sell&quot; button. This method removes amount from existing wallet and removes this wallet if amount is less that zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" line="83" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" bodystart="83" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1aa9bb873c612cea9093558ccbb332ef89" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer.MainWindow.btnAddTickerToTickers_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>btnAddTickerToTickers_Click</name>
+        <qualifiedname>Market_viewer.MainWindow.btnAddTickerToTickers_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Action for the &quot;Add&quot; button. This method adds to list of stocks new stock. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" line="115" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" bodystart="115" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1a85cc245be09a0684abe8a7858091e65f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer.MainWindow.ImageMakeOrRemoveFavourite_Click</definition>
+        <argsstring>(object sender, MouseButtonEventArgs e)</argsstring>
+        <name>ImageMakeOrRemoveFavourite_Click</name>
+        <qualifiedname>Market_viewer.MainWindow.ImageMakeOrRemoveFavourite_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseButtonEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Method to change image of star if stock adds or removes from list of favourite stocks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" line="155" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" bodystart="155" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1a6924f1f6fdad3ccdadb09d5cee37e219" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer.MainWindow.Window_Closing</definition>
+        <argsstring>(object sender, System.ComponentModel.CancelEventArgs e)</argsstring>
+        <name>Window_Closing</name>
+        <qualifiedname>Market_viewer.MainWindow.Window_Closing</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>System.ComponentModel.CancelEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Method to remove all not favourite stocks. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sender</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" line="178" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" bodystart="178" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1af5219de3a33093f7ba3f1e2e665818b5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Market_viewer.MainWindow.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Market_viewer.MainWindow.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="146" column="52" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="146" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1a73db5bc8599c2a4db0ac4ffcb9af0227" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IStyleConnector.</type>
+        <definition>void System.Windows.Markup.IStyleConnector. Market_viewer.MainWindow.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Market_viewer.MainWindow.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" line="224" column="48" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.cs" bodystart="224" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1af5219de3a33093f7ba3f1e2e665818b5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Market_viewer.MainWindow.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Market_viewer.MainWindow.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.i.cs" line="146" column="52" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.i.cs" bodystart="146" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1a73db5bc8599c2a4db0ac4ffcb9af0227" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IStyleConnector.</type>
+        <definition>void System.Windows.Markup.IStyleConnector. Market_viewer.MainWindow.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Market_viewer.MainWindow.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.i.cs" line="224" column="48" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/MainWindow.g.i.cs" bodystart="224" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer_1_1_main_window_1af5219de3a33093f7ba3f1e2e665818b5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void System.Windows.Markup.IComponentConnector.</type>
+        <definition>void System.Windows.Markup.IComponentConnector. Market_viewer.MainWindow.Connect</definition>
+        <argsstring>(int connectionId, object target)</argsstring>
+        <name>Connect</name>
+        <qualifiedname>Market_viewer.MainWindow.Connect</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>connectionId</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Release/MainWindow.g.cs" line="111" column="52" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Release/MainWindow.g.cs" bodystart="111" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main class. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>MainWindow. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Market_viewer.MainWindow</label>
+        <link refid="class_market__viewer_1_1_main_window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+      <node id="5">
+        <label>System::Windows::Markup::IStyleConnector</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Window</label>
+      </node>
+      <node id="2">
+        <label>Window</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Market_viewer.MainWindow</label>
+        <link refid="class_market__viewer_1_1_main_window"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>AddNewTicker</edgelabel>
+          <edgelabel>AmountOfTickerToAddOrMinus</edgelabel>
+          <edgelabel>CurrentPriceSelectedStock</edgelabel>
+          <edgelabel>FullAmountOfWallet</edgelabel>
+          <edgelabel>MaxPriceSelectedStock</edgelabel>
+          <edgelabel>MinPriceSelectedStock</edgelabel>
+          <edgelabel>listOfStock</edgelabel>
+          <edgelabel>listOfWallet</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>StockChart</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>OxyPlot</label>
+      </node>
+      <node id="6">
+        <label>System</label>
+      </node>
+      <node id="4">
+        <label>System::Windows::Markup::IComponentConnector</label>
+      </node>
+      <node id="5">
+        <label>System::Windows::Markup::IStyleConnector</label>
+      </node>
+      <node id="3">
+        <label>System::Windows::Window</label>
+      </node>
+      <node id="2">
+        <label>Window</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" line="13" column="19" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/MainWindow.xaml.cs" bodystart="14" bodyend="183"/>
+    <listofallmembers>
+      <member refid="class_market__viewer_1_1_main_window_1aff224e00dbcb197246093dfdc9d809f0" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>_contentLoaded</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a5c9f4f906057b448a99de163e2378d23" prot="package" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>AddNewTicker</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a182d43197b9a7ca15022ce7a03110107" prot="package" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>AmountOfTickerToAddOrMinus</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a9cd1846605f43062c1e6e863c4efcf86" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>btnAddSelectedItemAmount_Click</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1aa9bb873c612cea9093558ccbb332ef89" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>btnAddTickerToTickers_Click</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1affb965aef7eb88879f34306404591021" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>btnMinusSelectedItemAmount_Click</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1af5219de3a33093f7ba3f1e2e665818b5" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>Connect</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a73db5bc8599c2a4db0ac4ffcb9af0227" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>Connect</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1af5219de3a33093f7ba3f1e2e665818b5" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>Connect</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a73db5bc8599c2a4db0ac4ffcb9af0227" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>Connect</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1af5219de3a33093f7ba3f1e2e665818b5" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>Connect</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a519aa5232826d140d33ba275178387b4" prot="package" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>CurrentPriceSelectedStock</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a0a2e1c1fa860847b57d1c891e0ae7eb0" prot="package" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>FullAmountOfWallet</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a85cc245be09a0684abe8a7858091e65f" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>ImageMakeOrRemoveFavourite_Click</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a5137b0fc1e4a1926a485c459b8b0901c" prot="public" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>InitializeComponent</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a5137b0fc1e4a1926a485c459b8b0901c" prot="public" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>InitializeComponent</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a5137b0fc1e4a1926a485c459b8b0901c" prot="public" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>InitializeComponent</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a36391545bada3242c0fddc032239dc1d" prot="package" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>listOfStock</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a7629fbe09e56ead5ce6be600680a2f76" prot="public" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>ListOfStock_SelectionChanged</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a62b62fcdcd1f6c1756931fb8d61e4095" prot="package" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>listOfWallet</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1ab5f667ecb2f94f0cfb080bfa3d320c20" prot="public" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>MainWindow</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1aff8a91557358c48de2539294e5c665bd" prot="package" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>MaxPriceSelectedStock</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a987dead2d9c0f87a20af0335acf228db" prot="package" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>MinPriceSelectedStock</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a1d3a85de33600cd0f886bbd644c72ed0" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>StockApi</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a56d2e2ed9b43eba4829e018d7d797096" prot="package" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>StockChart</name></member>
+      <member refid="class_market__viewer_1_1_main_window_1a6924f1f6fdad3ccdadb09d5cee37e219" prot="private" virt="non-virtual"><scope>Market_viewer::MainWindow</scope><name>Window_Closing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

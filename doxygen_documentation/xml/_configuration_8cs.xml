@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_configuration_8cs" kind="file" language="C#">
+    <compoundname>Configuration.cs</compoundname>
+    <innerclass refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_configuration" prot="package">Market_viewer2::_0::Migrations::Configuration</innerclass>
+    <innernamespace refid="namespace_market__viewer2">Market_viewer2</innernamespace>
+    <innernamespace refid="namespace_market__viewer2_1_1__0">Market_viewer2::_0</innernamespace>
+    <innernamespace refid="namespace_market__viewer2_1_1__0_1_1_migrations">Market_viewer2::_0::Migrations</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_market__viewer2_1_1__0_1_1_migrations" kindref="compound">Market_viewer2._0.Migrations</ref></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Data.Entity.Migrations;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">internal</highlight><highlight class="normal"><sp/>sealed<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Configuration<sp/>:<sp/>DbMigrationsConfiguration&lt;Market_viewer2._0.Models.StockContext&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Configuration()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>AutomaticMigrationsEnabled<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Seed(<ref refid="namespace_market__viewer2" kindref="compound">Market_viewer2</ref>.<ref refid="namespace_market__viewer2_1_1__0" kindref="compound">_0</ref>.<ref refid="namespace_market__viewer2_1_1__0_1_1_models" kindref="compound">Models</ref>.<ref refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context" kindref="compound">StockContext</ref><sp/>context)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>This<sp/>method<sp/>will<sp/>be<sp/>called<sp/>after<sp/>migrating<sp/>to<sp/>the<sp/>latest<sp/>version.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>You<sp/>can<sp/>use<sp/>the<sp/>DbSet&lt;T&gt;.AddOrUpdate()<sp/>helper<sp/>extension<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>to<sp/>avoid<sp/>creating<sp/>duplicate<sp/>seed<sp/>data.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/Configuration.cs"/>
+  </compounddef>
+</doxygen>

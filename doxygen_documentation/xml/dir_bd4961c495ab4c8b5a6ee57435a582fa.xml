@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_bd4961c495ab4c8b5a6ee57435a582fa" kind="dir">
+    <compoundname>C:/Users/kuba_/Desktop/market_viewer</compoundname>
+    <innerdir refid="dir_baedc90bde225ae598b2fd5ba7014136">C:/Users/kuba_/Desktop/market_viewer/Market_viewer</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/"/>
+  </compounddef>
+</doxygen>

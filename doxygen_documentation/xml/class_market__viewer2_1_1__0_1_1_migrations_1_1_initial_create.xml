@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create" kind="class" language="C#" prot="public">
+    <compoundname>Market_viewer2::_0::Migrations::InitialCreate</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DbMigration</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IMigrationMetadata</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1abcecec9122f587916766cbbbf7b5b771" prot="private" static="no" mutable="no">
+        <type>readonly ResourceManager</type>
+        <definition>readonly ResourceManager Market_viewer2._0.Migrations.InitialCreate.Resources</definition>
+        <argsstring></argsstring>
+        <name>Resources</name>
+        <qualifiedname>Market_viewer2._0.Migrations.InitialCreate.Resources</qualifiedname>
+        <initializer>= new ResourceManager(typeof(<ref refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create" kindref="compound">InitialCreate</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.Designer.cs" line="12" column="42" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.Designer.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1ab3330f3f22d0221816137fd179d77468" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string IMigrationMetadata.</type>
+        <definition>string IMigrationMetadata. Market_viewer2._0.Migrations.InitialCreate.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <qualifiedname>Market_viewer2._0.Migrations.InitialCreate.Id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.Designer.cs" line="14" column="34" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.Designer.cs" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1a067f34b3a27959dfd324034b32dd41da" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string IMigrationMetadata.</type>
+        <definition>string IMigrationMetadata. Market_viewer2._0.Migrations.InitialCreate.Source</definition>
+        <argsstring></argsstring>
+        <name>Source</name>
+        <qualifiedname>Market_viewer2._0.Migrations.InitialCreate.Source</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.Designer.cs" line="19" column="34" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.Designer.cs" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1ac233b13b85235633022e982eb9fcbaa6" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>string IMigrationMetadata.</type>
+        <definition>string IMigrationMetadata. Market_viewer2._0.Migrations.InitialCreate.Target</definition>
+        <argsstring></argsstring>
+        <name>Target</name>
+        <qualifiedname>Market_viewer2._0.Migrations.InitialCreate.Target</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.Designer.cs" line="24" column="34" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.Designer.cs" bodystart="25" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1a49a209540fabeea42e3bdd7ce197d043" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Market_viewer2._0.Migrations.InitialCreate.Up</definition>
+        <argsstring>()</argsstring>
+        <name>Up</name>
+        <qualifiedname>Market_viewer2._0.Migrations.InitialCreate.Up</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.cs" line="8" column="30" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.cs" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1a6e4048c3e597ec40109c4f559b10f4ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Market_viewer2._0.Migrations.InitialCreate.Down</definition>
+        <argsstring>()</argsstring>
+        <name>Down</name>
+        <qualifiedname>Market_viewer2._0.Migrations.InitialCreate.Down</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.cs" line="12" column="30" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.cs" bodystart="12" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DbMigration</label>
+      </node>
+      <node id="3">
+        <label>IMigrationMetadata</label>
+      </node>
+      <node id="1">
+        <label>Market_viewer2._0.Migrations.InitialCreate</label>
+        <link refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DbMigration</label>
+      </node>
+      <node id="3">
+        <label>IMigrationMetadata</label>
+      </node>
+      <node id="1">
+        <label>Market_viewer2._0.Migrations.InitialCreate</label>
+        <link refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.cs" line="6" column="19" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202304052009313_InitialCreate.cs" bodystart="7" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1a6e4048c3e597ec40109c4f559b10f4ef" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Migrations::InitialCreate</scope><name>Down</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1ab3330f3f22d0221816137fd179d77468" prot="private" virt="non-virtual"><scope>Market_viewer2::_0::Migrations::InitialCreate</scope><name>Id</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1abcecec9122f587916766cbbbf7b5b771" prot="private" virt="non-virtual"><scope>Market_viewer2::_0::Migrations::InitialCreate</scope><name>Resources</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1a067f34b3a27959dfd324034b32dd41da" prot="private" virt="non-virtual"><scope>Market_viewer2::_0::Migrations::InitialCreate</scope><name>Source</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1ac233b13b85235633022e982eb9fcbaa6" prot="private" virt="non-virtual"><scope>Market_viewer2::_0::Migrations::InitialCreate</scope><name>Target</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1a49a209540fabeea42e3bdd7ce197d043" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Migrations::InitialCreate</scope><name>Up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

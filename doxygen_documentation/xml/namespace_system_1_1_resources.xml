@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespace_system_1_1_resources" kind="namespace" language="C#">
+    <compoundname>System::Resources</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/202303261927060_IntialCreate.Designer.cs" line="7" column="27"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespace_market__viewer2_1_1__0" kind="namespace" language="C#">
+    <compoundname>Market_viewer2::_0</compoundname>
+    <innerclass refid="class_market__viewer2_1_1__0_1_1_app" prot="public">Market_viewer2::_0::App</innerclass>
+    <innernamespace refid="namespace_market__viewer2_1_1__0_1_1_migrations">Market_viewer2::_0::Migrations</innernamespace>
+    <innernamespace refid="namespace_market__viewer2_1_1__0_1_1_models">Market_viewer2::_0::Models</innernamespace>
+    <innernamespace refid="namespace_market__viewer2_1_1__0_1_1_properties">Market_viewer2::_0::Properties</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/App.xaml.cs" line="3" column="1"/>
+  </compounddef>
+</doxygen>

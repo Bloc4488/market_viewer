@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_market__viewer2_1_1__0_1_1_properties_1_1_settings" kind="class" language="C#" prot="package">
+    <compoundname>Market_viewer2::_0::Properties::Settings</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">global.SystemConfiguration.ApplicationSettingsBase</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_market__viewer2_1_1__0_1_1_properties_1_1_settings_1aeb4efee3e96d75512be2c9b456071359" prot="private" static="yes" mutable="no">
+        <type>Settings</type>
+        <definition>Settings Market_viewer2._0.Properties.Settings.defaultInstance</definition>
+        <argsstring></argsstring>
+        <name>defaultInstance</name>
+        <qualifiedname>Market_viewer2._0.Properties.Settings.defaultInstance</qualifiedname>
+        <initializer>= ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Settings.Designer.cs" line="20" column="33" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Settings.Designer.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_properties_1_1_settings_1a2927f3e3c8d005a9d6aa852aab35a1fc" prot="public" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>Settings</type>
+        <definition>Settings Market_viewer2._0.Properties.Settings.Default</definition>
+        <argsstring></argsstring>
+        <name>Default</name>
+        <qualifiedname>Market_viewer2._0.Properties.Settings.Default</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Settings.Designer.cs" line="22" column="32" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Settings.Designer.cs" bodystart="23" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Market_viewer2._0.Properties.Settings</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>global::SystemConfiguration::ApplicationSettingsBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Market_viewer2._0.Properties.Settings</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>global::SystemConfiguration::ApplicationSettingsBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Settings.Designer.cs" line="17" column="28" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Settings.Designer.cs" bodystart="18" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_settings_1a2927f3e3c8d005a9d6aa852aab35a1fc" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Properties::Settings</scope><name>Default</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_settings_1aeb4efee3e96d75512be2c9b456071359" prot="private" virt="non-virtual"><scope>Market_viewer2::_0::Properties::Settings</scope><name>defaultInstance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

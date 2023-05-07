@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_1a488d8690de260af54d7f49d1d9e273" kind="dir">
+    <compoundname>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug</compoundname>
+    <innerfile refid="_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs">.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_debug_2_app_8g_8cs">App.g.cs</innerfile>
+    <innerfile refid="_app_8g_8i_8cs">App.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_main_window_8g_8cs">MainWindow.g.cs</innerfile>
+    <innerfile refid="_main_window_8g_8i_8cs">MainWindow.g.i.cs</innerfile>
+    <innerfile refid="_debug_2_market__viewer2_80___content_8g_8cs">Market_viewer2.0_Content.g.cs</innerfile>
+    <innerfile refid="_market__viewer2_80___content_8g_8i_8cs">Market_viewer2.0_Content.g.i.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/"/>
+  </compounddef>
+</doxygen>

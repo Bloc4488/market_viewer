@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
+  <compound refid="class_market__viewer2_1_1__0_1_1_models_1_1_api" kind="class"><name>Market_viewer2::_0::Models::Api</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_api_1ad59f25fb8d36263c3b84df91ff52ecdb" kind="variable"><name>datatype</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_api_1a48a156b4ed0b57497e5070e3971103bf" kind="variable"><name>outputsize</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_api_1a6a1f231af148b6983f264ba3cee3752a" kind="variable"><name>key</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_api_1a58046d8985fcbfcf06732109e1cde445" kind="variable"><name>apiUrl</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_api_1ad2ced3ad6bc8ffdfacbe301ad6ad0563" kind="function"><name>Api</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_api_1ac6562b006fa683164711921ad2585bf1" kind="function"><name>SetUrl</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_api_1a55daa6f90a589c021ed93e917d786f11" kind="function"><name>DownloadData</name></member>
+  </compound>
+  <compound refid="class_market__viewer2_1_1__0_1_1_app" kind="class"><name>Market_viewer2::_0::App</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_app_1a672648909bc6fa43d4a3b186937b4e3b" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_app_1a222f842ddf2917717b5f06b8ccfd36f5" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_app_1a222f842ddf2917717b5f06b8ccfd36f5" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_app_1a222f842ddf2917717b5f06b8ccfd36f5" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_app_1a9a799fdda757b10133773fbf5830517c" kind="function"><name>Main</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_app_1a9a799fdda757b10133773fbf5830517c" kind="function"><name>Main</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_app_1a9a799fdda757b10133773fbf5830517c" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_configuration" kind="class"><name>Market_viewer2::_0::Migrations::Configuration</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_configuration_1aa2b24fe5833b9975bf8dc79b8bf47d34" kind="function"><name>Configuration</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_configuration_1a364a61d9be0aaeedac434bb591ef0e44" kind="function"><name>Seed</name></member>
+  </compound>
+  <compound refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create" kind="class"><name>Market_viewer2::_0::Migrations::InitialCreate</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1abcecec9122f587916766cbbbf7b5b771" kind="variable"><name>Resources</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1ab3330f3f22d0221816137fd179d77468" kind="property"><name>Id</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1a067f34b3a27959dfd324034b32dd41da" kind="property"><name>Source</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1ac233b13b85235633022e982eb9fcbaa6" kind="property"><name>Target</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1a49a209540fabeea42e3bdd7ce197d043" kind="function"><name>Up</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_initial_create_1a6e4048c3e597ec40109c4f559b10f4ef" kind="function"><name>Down</name></member>
+  </compound>
+  <compound refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_intial_create" kind="class"><name>Market_viewer2::_0::Migrations::IntialCreate</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_intial_create_1abee9458ba8ccb7e86161340c4bb421ed" kind="variable"><name>Resources</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_intial_create_1af42e858f76a4fdbac943905426a358fb" kind="property"><name>Id</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_intial_create_1a6e8148a73cd32de20f9a89bf0baf57b5" kind="property"><name>Source</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_intial_create_1ac14da7058f8943c7756bde51e7b4ca45" kind="property"><name>Target</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_intial_create_1a47a67ef33f0e5190359d47ba07ddd776" kind="function"><name>Up</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_intial_create_1a3a5e55c69749108fd02dcbc80114ff33" kind="function"><name>Down</name></member>
+  </compound>
+  <compound refid="class_market__viewer_1_1_main_window" kind="class"><name>Market_viewer::MainWindow</name>
+    <member refid="class_market__viewer_1_1_main_window_1a1d3a85de33600cd0f886bbd644c72ed0" kind="variable"><name>StockApi</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1aff224e00dbcb197246093dfdc9d809f0" kind="variable"><name>_contentLoaded</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a36391545bada3242c0fddc032239dc1d" kind="variable"><name>listOfStock</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a62b62fcdcd1f6c1756931fb8d61e4095" kind="variable"><name>listOfWallet</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a0a2e1c1fa860847b57d1c891e0ae7eb0" kind="variable"><name>FullAmountOfWallet</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1aff8a91557358c48de2539294e5c665bd" kind="variable"><name>MaxPriceSelectedStock</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a987dead2d9c0f87a20af0335acf228db" kind="variable"><name>MinPriceSelectedStock</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a519aa5232826d140d33ba275178387b4" kind="variable"><name>CurrentPriceSelectedStock</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a182d43197b9a7ca15022ce7a03110107" kind="variable"><name>AmountOfTickerToAddOrMinus</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a5c9f4f906057b448a99de163e2378d23" kind="variable"><name>AddNewTicker</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a56d2e2ed9b43eba4829e018d7d797096" kind="variable"><name>StockChart</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1ab5f667ecb2f94f0cfb080bfa3d320c20" kind="function"><name>MainWindow</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a7629fbe09e56ead5ce6be600680a2f76" kind="function"><name>ListOfStock_SelectionChanged</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a5137b0fc1e4a1926a485c459b8b0901c" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a5137b0fc1e4a1926a485c459b8b0901c" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a5137b0fc1e4a1926a485c459b8b0901c" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a9cd1846605f43062c1e6e863c4efcf86" kind="function"><name>btnAddSelectedItemAmount_Click</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1affb965aef7eb88879f34306404591021" kind="function"><name>btnMinusSelectedItemAmount_Click</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1aa9bb873c612cea9093558ccbb332ef89" kind="function"><name>btnAddTickerToTickers_Click</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a85cc245be09a0684abe8a7858091e65f" kind="function"><name>ImageMakeOrRemoveFavourite_Click</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a6924f1f6fdad3ccdadb09d5cee37e219" kind="function"><name>Window_Closing</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1af5219de3a33093f7ba3f1e2e665818b5" kind="function"><name>Connect</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a73db5bc8599c2a4db0ac4ffcb9af0227" kind="function"><name>Connect</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1af5219de3a33093f7ba3f1e2e665818b5" kind="function"><name>Connect</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1a73db5bc8599c2a4db0ac4ffcb9af0227" kind="function"><name>Connect</name></member>
+    <member refid="class_market__viewer_1_1_main_window_1af5219de3a33093f7ba3f1e2e665818b5" kind="function"><name>Connect</name></member>
+  </compound>
+  <compound refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources" kind="class"><name>Market_viewer2::_0::Properties::Resources</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a5060eac6c8dd3877a3211bbc73363945" kind="variable"><name>resourceMan</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a90524f6edaee398e8bfa20f5cff0bdd1" kind="variable"><name>resourceCulture</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1aafe07d703e6ee81717bbacaf1810472f" kind="property"><name>ResourceManager</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a659af8b7888115dd17c560af7bed03f5" kind="property"><name>Culture</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a22e1d29dbc0bc567fd7792e010a0c7fa" kind="function"><name>Resources</name></member>
+  </compound>
+  <compound refid="class_market__viewer2_1_1__0_1_1_properties_1_1_settings" kind="class"><name>Market_viewer2::_0::Properties::Settings</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_settings_1aeb4efee3e96d75512be2c9b456071359" kind="variable"><name>defaultInstance</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_settings_1a2927f3e3c8d005a9d6aa852aab35a1fc" kind="property"><name>Default</name></member>
+  </compound>
+  <compound refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context" kind="class"><name>Market_viewer2::_0::Models::StockContext</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a2c38b6e2d6dc7b7e37e2ef20917791f8" kind="property"><name>Tickers</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a15e4a2744b27de5e48425d2c8dc3cd9c" kind="property"><name>StockDataPoints</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a9d5812b214ad3418577589a447a8e0dd" kind="property"><name>Wallets</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a998d6e35da3dcbfd1634b661a3a087d6" kind="function"><name>StockContext</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context_1a1ddc71d32e627999fb30759d9b153ec4" kind="function"><name>OnModelCreating</name></member>
+  </compound>
+  <compound refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point" kind="class"><name>Market_viewer2::_0::Models::StockDataPoint</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a4ab9a0cf8c43ceadfe4159cbf07966bb" kind="property"><name>ID</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a813548d9a0001dfcdf8a2bc865ada33c" kind="property"><name>Date</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1af5d71fdd8215276dfaeaefb25afd1241" kind="property"><name>Open</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a502d9d0572382422f1a12c6969de798c" kind="property"><name>High</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a9cfda7be7c229746595e8c2161fcc527" kind="property"><name>Low</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a61c5c8c68cbb765b9a0e285e28251e80" kind="property"><name>Close</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a57fcac212e210a7549a2f72fdb3bf8bf" kind="property"><name>Adj_close</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a8616b3c2b32dd9f069f99c1313e53e6e" kind="property"><name>Volume</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a3c972ce9106ed124a81cc07a524d8064" kind="property"><name>Dividend</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a72786df9eb709f350e3a260312dddde7" kind="property"><name>tickerId</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a89223f85a6bff25457ea3f2bbc6c22d8" kind="property"><name>Ticker</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point_1a523c6097d3d40e97686bf5b72ba63b2d" kind="function"><name>PrintInfo</name></member>
+  </compound>
+  <compound refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_db_initializer" kind="class"><name>Market_viewer2::_0::Models::StockDbInitializer</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_db_initializer_1a4055cf1e5c629ead00f8f176d278e465" kind="function"><name>Seed</name></member>
+  </compound>
+  <compound refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet" kind="class"><name>Market_viewer2::_0::Models::Wallet</name>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1a7b4f0276612b47fdebb1beaf98ef2d9f" kind="property"><name>id</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1a201c62bddbb18e412b8aa73b1dab6e23" kind="property"><name>amount</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1a580c2eada9d95c39bdf65f241445213a" kind="property"><name>tickerId</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1acb574ecfbb5ddf7eeb8e2e6656f2a8c4" kind="property"><name>Ticker</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1ae3daed20c71b95e066d438ac5cf7c468" kind="function"><name>Wallet</name></member>
+    <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1ae2f67bcac3179a1d7ff7f9d9baa1cc3d" kind="function"><name>Wallet</name></member>
+  </compound>
+  <compound refid="namespaceglobal" kind="namespace"><name>global</name>
+  </compound>
+  <compound refid="namespaceglobal_1_1_system_configuration" kind="namespace"><name>global::SystemConfiguration</name>
+  </compound>
+  <compound refid="namespace_market__viewer" kind="namespace"><name>Market_viewer</name>
+  </compound>
+  <compound refid="namespace_market__viewer2" kind="namespace"><name>Market_viewer2</name>
+  </compound>
+  <compound refid="namespace_market__viewer2_1_1__0" kind="namespace"><name>Market_viewer2::_0</name>
+  </compound>
+  <compound refid="namespace_market__viewer2_1_1__0_1_1_migrations" kind="namespace"><name>Market_viewer2::_0::Migrations</name>
+  </compound>
+  <compound refid="namespace_market__viewer2_1_1__0_1_1_models" kind="namespace"><name>Market_viewer2::_0::Models</name>
+  </compound>
+  <compound refid="namespace_market__viewer2_1_1__0_1_1_properties" kind="namespace"><name>Market_viewer2::_0::Properties</name>
+  </compound>
+  <compound refid="namespace_material_design_themes_1_1_wpf" kind="namespace"><name>MaterialDesignThemes::Wpf</name>
+  </compound>
+  <compound refid="namespace_material_design_themes_1_1_wpf_1_1_converters" kind="namespace"><name>MaterialDesignThemes::Wpf::Converters</name>
+  </compound>
+  <compound refid="namespace_material_design_themes_1_1_wpf_1_1_transitions" kind="namespace"><name>MaterialDesignThemes::Wpf::Transitions</name>
+  </compound>
+  <compound refid="namespace_oxy_plot" kind="namespace"><name>OxyPlot</name>
+  </compound>
+  <compound refid="namespace_oxy_plot_1_1_axes" kind="namespace"><name>OxyPlot::Axes</name>
+  </compound>
+  <compound refid="namespace_oxy_plot_1_1_series" kind="namespace"><name>OxyPlot::Series</name>
+  </compound>
+  <compound refid="namespace_oxy_plot_1_1_wpf" kind="namespace"><name>OxyPlot::Wpf</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_code_dom_1_1_compiler" kind="namespace"><name>System::CodeDom::Compiler</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_object_model" kind="namespace"><name>System::Collections::ObjectModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model_1_1_data_annotations_1_1_schema" kind="namespace"><name>System::ComponentModel::DataAnnotations::Schema</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data_1_1_entity" kind="namespace"><name>System::Data::Entity</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data_1_1_entity_1_1_migrations" kind="namespace"><name>System::Data::Entity::Migrations</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data_1_1_entity_1_1_migrations_1_1_infrastructure" kind="namespace"><name>System::Data::Entity::Migrations::Infrastructure</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_net" kind="namespace"><name>System::Net</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_resources" kind="namespace"><name>System::Resources</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows" kind="namespace"><name>System::Windows</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_automation" kind="namespace"><name>System::Windows::Automation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls" kind="namespace"><name>System::Windows::Controls</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls_1_1_primitives" kind="namespace"><name>System::Windows::Controls::Primitives</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_data" kind="namespace"><name>System::Windows::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_documents" kind="namespace"><name>System::Windows::Documents</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_ink" kind="namespace"><name>System::Windows::Ink</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_input" kind="namespace"><name>System::Windows::Input</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_markup" kind="namespace"><name>System::Windows::Markup</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media" kind="namespace"><name>System::Windows::Media</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_animation" kind="namespace"><name>System::Windows::Media::Animation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_effects" kind="namespace"><name>System::Windows::Media::Effects</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_imaging" kind="namespace"><name>System::Windows::Media::Imaging</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_media3_d" kind="namespace"><name>System::Windows::Media::Media3D</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_text_formatting" kind="namespace"><name>System::Windows::Media::TextFormatting</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_navigation" kind="namespace"><name>System::Windows::Navigation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_shapes" kind="namespace"><name>System::Windows::Shapes</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_shell" kind="namespace"><name>System::Windows::Shell</name>
+  </compound>
+  <compound refid="_app_8xaml_8cs" kind="file"><name>App.xaml.cs</name>
+  </compound>
+  <compound refid="_main_window_8xaml_8cs" kind="file"><name>MainWindow.xaml.cs</name>
+  </compound>
+  <compound refid="202303261927060___intial_create_8cs" kind="file"><name>202303261927060_IntialCreate.cs</name>
+  </compound>
+  <compound refid="202303261927060___intial_create_8_designer_8cs" kind="file"><name>202303261927060_IntialCreate.Designer.cs</name>
+  </compound>
+  <compound refid="202304052009313___initial_create_8cs" kind="file"><name>202304052009313_InitialCreate.cs</name>
+  </compound>
+  <compound refid="202304052009313___initial_create_8_designer_8cs" kind="file"><name>202304052009313_InitialCreate.Designer.cs</name>
+  </compound>
+  <compound refid="_configuration_8cs" kind="file"><name>Configuration.cs</name>
+  </compound>
+  <compound refid="_api_8cs" kind="file"><name>Api.cs</name>
+  </compound>
+  <compound refid="_application_context_8cs" kind="file"><name>ApplicationContext.cs</name>
+  </compound>
+  <compound refid="_stock_8cs" kind="file"><name>Stock.cs</name>
+  </compound>
+  <compound refid="_stock_data_point_8cs" kind="file"><name>StockDataPoint.cs</name>
+  </compound>
+  <compound refid="_view_model_8cs" kind="file"><name>ViewModel.cs</name>
+  </compound>
+  <compound refid="_wallet_8cs" kind="file"><name>Wallet.cs</name>
+  </compound>
+  <compound refid="_debug_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_release_2_8_n_e_t_framework_00_version_0av4_87_82_8_assembly_attributes_8cs" kind="file"><name>.NETFramework,Version=v4.7.2.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_debug_2_app_8g_8cs" kind="file"><name>App.g.cs</name>
+  </compound>
+  <compound refid="_release_2_app_8g_8cs" kind="file"><name>App.g.cs</name>
+  </compound>
+  <compound refid="_app_8g_8i_8cs" kind="file"><name>App.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_main_window_8g_8cs" kind="file"><name>MainWindow.g.cs</name>
+  </compound>
+  <compound refid="_release_2_main_window_8g_8cs" kind="file"><name>MainWindow.g.cs</name>
+  </compound>
+  <compound refid="_main_window_8g_8i_8cs" kind="file"><name>MainWindow.g.i.cs</name>
+  </compound>
+  <compound refid="_debug_2_market__viewer2_80___content_8g_8cs" kind="file"><name>Market_viewer2.0_Content.g.cs</name>
+  </compound>
+  <compound refid="_release_2_market__viewer2_80___content_8g_8cs" kind="file"><name>Market_viewer2.0_Content.g.cs</name>
+  </compound>
+  <compound refid="_market__viewer2_80___content_8g_8i_8cs" kind="file"><name>Market_viewer2.0_Content.g.i.cs</name>
+  </compound>
+  <compound refid="_l_i_c_e_n_s_e_8md" kind="file"><name>LICENSE.md</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_resources_8_designer_8cs" kind="file"><name>Resources.Designer.cs</name>
+  </compound>
+  <compound refid="_settings_8_designer_8cs" kind="file"><name>Settings.Designer.cs</name>
+  </compound>
+  <compound refid="md__c___users_kuba___desktop_market_viewer__market_viewer_packages__newtonsoft__json_13_0_3__l_i_c_e_n_s_e" kind="page"><name>md_C__Users_kuba__Desktop_market_viewer_Market_viewer_packages_Newtonsoft_Json_13_0_3_LICENSE</name>
+  </compound>
+  <compound refid="md__c___users_kuba___desktop_market_viewer__market_viewer_packages__newtonsoft__json_13_0_3__r_e_a_d_m_e" kind="page"><name>md_C__Users_kuba__Desktop_market_viewer_Market_viewer_packages_Newtonsoft_Json_13_0_3_README</name>
+  </compound>
+  <compound refid="dir_1a488d8690de260af54d7f49d1d9e273" kind="dir"><name>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug</name>
+  </compound>
+  <compound refid="dir_74274995a997c23cf017aea5830db389" kind="dir"><name>C:/Users/kuba_/Desktop</name>
+  </compound>
+  <compound refid="dir_00148e0cfe9366ccb744ae5cf57ac291" kind="dir"><name>C:/Users/kuba_</name>
+  </compound>
+  <compound refid="dir_bd4961c495ab4c8b5a6ee57435a582fa" kind="dir"><name>C:/Users/kuba_/Desktop/market_viewer</name>
+  </compound>
+  <compound refid="dir_baedc90bde225ae598b2fd5ba7014136" kind="dir"><name>C:/Users/kuba_/Desktop/market_viewer/Market_viewer</name>
+  </compound>
+  <compound refid="dir_ad469a93c084a98dbf271080522012a5" kind="dir"><name>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations</name>
+  </compound>
+  <compound refid="dir_3e041d7882c0b736bc4e27709ce3a5a5" kind="dir"><name>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models</name>
+  </compound>
+  <compound refid="dir_2de06257363b9633fddc6dd459c97a14" kind="dir"><name>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/packages/Newtonsoft.Json.13.0.3</name>
+  </compound>
+  <compound refid="dir_541807e0b2086b25a7e6f51f98f772b2" kind="dir"><name>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj</name>
+  </compound>
+  <compound refid="dir_b68775da77d0111b6741203f9c583628" kind="dir"><name>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/packages</name>
+  </compound>
+  <compound refid="dir_f80fcfe9a5e8111defee79f8a1199d18" kind="dir"><name>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties</name>
+  </compound>
+  <compound refid="dir_8bd9aaba72dcfebfec9f4b326dccedcd" kind="dir"><name>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Release</name>
+  </compound>
+  <compound refid="dir_d522931ffa1371640980b621734a4381" kind="dir"><name>C:/Users</name>
+  </compound>
+</doxygenindex>

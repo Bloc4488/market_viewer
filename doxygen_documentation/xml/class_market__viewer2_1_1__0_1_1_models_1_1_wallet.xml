@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_market__viewer2_1_1__0_1_1_models_1_1_wallet" kind="class" language="C#" prot="public">
+    <compoundname>Market_viewer2::_0::Models::Wallet</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1a7b4f0276612b47fdebb1beaf98ef2d9f" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Market_viewer2._0.Models.Wallet.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Market_viewer2._0.Models.Wallet.id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" line="8" column="20" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1a201c62bddbb18e412b8aa73b1dab6e23" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>double</type>
+        <definition>double Market_viewer2._0.Models.Wallet.amount</definition>
+        <argsstring></argsstring>
+        <name>amount</name>
+        <qualifiedname>Market_viewer2._0.Models.Wallet.amount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" line="10" column="23" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1a580c2eada9d95c39bdf65f241445213a" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Market_viewer2._0.Models.Wallet.tickerId</definition>
+        <argsstring></argsstring>
+        <name>tickerId</name>
+        <qualifiedname>Market_viewer2._0.Models.Wallet.tickerId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" line="12" column="20" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1acb574ecfbb5ddf7eeb8e2e6656f2a8c4" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>Stock</type>
+        <definition>Stock Market_viewer2._0.Models.Wallet.Ticker</definition>
+        <argsstring></argsstring>
+        <name>Ticker</name>
+        <qualifiedname>Market_viewer2._0.Models.Wallet.Ticker</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" line="14" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1ae3daed20c71b95e066d438ac5cf7c468" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Market_viewer2._0.Models.Wallet.Wallet</definition>
+        <argsstring>()</argsstring>
+        <name>Wallet</name>
+        <qualifiedname>Market_viewer2._0.Models.Wallet.Wallet</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" line="16" column="16" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1ae2f67bcac3179a1d7ff7f9d9baa1cc3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Market_viewer2._0.Models.Wallet.Wallet</definition>
+        <argsstring>(Stock ticker, double value)</argsstring>
+        <name>Wallet</name>
+        <qualifiedname>Market_viewer2._0.Models.Wallet.Wallet</qualifiedname>
+        <param>
+          <type>Stock</type>
+          <declname>ticker</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>The constructor sets initial parameters of the wallet class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ticker</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ticker of the stock of intrest.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Price value of the given stock</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" line="22" column="16" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" bodystart="22" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class represents wallet containing stocks provided by the user. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" line="6" column="11" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Wallet.cs" bodystart="7" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1a201c62bddbb18e412b8aa73b1dab6e23" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Models::Wallet</scope><name>amount</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1a7b4f0276612b47fdebb1beaf98ef2d9f" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Models::Wallet</scope><name>id</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1acb574ecfbb5ddf7eeb8e2e6656f2a8c4" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Models::Wallet</scope><name>Ticker</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1a580c2eada9d95c39bdf65f241445213a" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Models::Wallet</scope><name>tickerId</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1ae3daed20c71b95e066d438ac5cf7c468" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Models::Wallet</scope><name>Wallet</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet_1ae2f67bcac3179a1d7ff7f9d9baa1cc3d" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Models::Wallet</scope><name>Wallet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

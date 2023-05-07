@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_market__viewer2_1_1__0_1_1_migrations_1_1_configuration" kind="class" language="C#" prot="package">
+    <compoundname>Market_viewer2::_0::Migrations::Configuration</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">DbMigrationsConfiguration&lt; Market_viewer2._0.Models.StockContext &gt;</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_migrations_1_1_configuration_1aa2b24fe5833b9975bf8dc79b8bf47d34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Market_viewer2._0.Migrations.Configuration.Configuration</definition>
+        <argsstring>()</argsstring>
+        <name>Configuration</name>
+        <qualifiedname>Market_viewer2._0.Migrations.Configuration.Configuration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/Configuration.cs" line="7" column="16" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/Configuration.cs" bodystart="7" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_migrations_1_1_configuration_1a364a61d9be0aaeedac434bb591ef0e44" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Market_viewer2._0.Migrations.Configuration.Seed</definition>
+        <argsstring>(Market_viewer2._0.Models.StockContext context)</argsstring>
+        <name>Seed</name>
+        <qualifiedname>Market_viewer2._0.Migrations.Configuration.Seed</qualifiedname>
+        <param>
+          <type><ref refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context" kindref="compound">Market_viewer2._0.Models.StockContext</ref></type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/Configuration.cs" line="12" column="33" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/Configuration.cs" bodystart="12" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>DbMigrationsConfiguration&lt; Market_viewer2._0.Models.StockContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Market_viewer2._0.Migrations.Configuration</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>DbMigrationsConfiguration&lt; Market_viewer2._0.Models.StockContext &gt;</label>
+      </node>
+      <node id="1">
+        <label>Market_viewer2._0.Migrations.Configuration</label>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/Configuration.cs" line="5" column="20" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/Configuration.cs" bodystart="6" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_configuration_1aa2b24fe5833b9975bf8dc79b8bf47d34" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::Migrations::Configuration</scope><name>Configuration</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_migrations_1_1_configuration_1a364a61d9be0aaeedac434bb591ef0e44" prot="protected" virt="non-virtual"><scope>Market_viewer2::_0::Migrations::Configuration</scope><name>Seed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

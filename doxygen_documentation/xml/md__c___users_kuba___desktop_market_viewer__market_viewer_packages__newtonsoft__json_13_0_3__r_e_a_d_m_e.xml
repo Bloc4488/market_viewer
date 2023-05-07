@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="md__c___users_kuba___desktop_market_viewer__market_viewer_packages__newtonsoft__json_13_0_3__r_e_a_d_m_e" kind="page">
+    <compoundname>md_C__Users_kuba__Desktop_market_viewer_Market_viewer_packages_Newtonsoft_Json_13_0_3_README</compoundname>
+    <title>&lt;img src=&quot;https://raw.githubusercontent.com/JamesNK/Newtonsoft.Json/master/Doc/icons/logo.jpg&quot; alt=&quot;Logo&quot;/&gt; Json.NET</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ulink url="https://www.nuget.org/packages/Newtonsoft.Json/"><image type="html" name="https://img.shields.io/nuget/v/Newtonsoft.Json.svg?style=flat-square" alt="NuGet version (Newtonsoft.Json)" inline="yes"></image>
+</ulink> <ulink url="https://dev.azure.com/jamesnk/Public/_build/latest?definitionId=8"><image type="html" name="https://dev.azure.com/jamesnk/Public/_apis/build/status/JamesNK.Newtonsoft.Json?branchName=master" alt="Build status" inline="yes"></image>
+</ulink></para>
+<para>Json.NET is a popular high-performance JSON framework for .NET</para>
+<sect1 id="md__c___users_kuba___desktop_market_viewer__market_viewer_packages__newtonsoft__json_13_0_3__r_e_a_d_m_e_1autotoc_md1">
+<title>Serialize JSON</title>
+<para><programlisting filename=".cs"><codeline><highlight class="normal">Product<sp/>product<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Product();</highlight></codeline>
+<codeline><highlight class="normal">product.Name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Apple&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">product.Expiry<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DateTime(2008,<sp/>12,<sp/>28);</highlight></codeline>
+<codeline><highlight class="normal">product.Sizes<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">[]<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;Small&quot;</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>json<sp/>=<sp/>JsonConvert.SerializeObject(product);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>&quot;Name&quot;:<sp/>&quot;Apple&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>&quot;Expiry&quot;:<sp/>&quot;2008-12-28T00:00:00&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>&quot;Sizes&quot;:<sp/>[</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&quot;Small&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>}</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__c___users_kuba___desktop_market_viewer__market_viewer_packages__newtonsoft__json_13_0_3__r_e_a_d_m_e_1autotoc_md2">
+<title>Deserialize JSON</title>
+<para><programlisting filename=".cs"><codeline><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>json<sp/>=<sp/></highlight><highlight class="stringliteral">@&quot;{</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/>&apos;Name&apos;:<sp/>&apos;Bad<sp/>Boys&apos;,</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/>&apos;ReleaseDate&apos;:<sp/>&apos;1995-4-7T00:00:00&apos;,</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/>&apos;Genres&apos;:<sp/>[</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;Action&apos;,</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;Comedy&apos;</highlight></codeline>
+<codeline><highlight class="stringliteral"><sp/><sp/>]</highlight></codeline>
+<codeline><highlight class="stringliteral">}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Movie<sp/>m<sp/>=<sp/>JsonConvert.DeserializeObject&lt;Movie&gt;(json);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>name<sp/>=<sp/>m.Name;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Bad<sp/>Boys</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__c___users_kuba___desktop_market_viewer__market_viewer_packages__newtonsoft__json_13_0_3__r_e_a_d_m_e_1autotoc_md3">
+<title>LINQ to JSON</title>
+<para><programlisting filename=".cs"><codeline><highlight class="normal">JArray<sp/>array<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JArray();</highlight></codeline>
+<codeline><highlight class="normal">array.Add(</highlight><highlight class="stringliteral">&quot;Manual<sp/>text&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">array.Add(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>DateTime(2000,<sp/>5,<sp/>23));</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">JObject<sp/>o<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>JObject();</highlight></codeline>
+<codeline><highlight class="normal">o[</highlight><highlight class="stringliteral">&quot;MyArray&quot;</highlight><highlight class="normal">]<sp/>=<sp/>array;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>json<sp/>=<sp/>o.ToString();</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>&quot;MyArray&quot;:<sp/>[</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&quot;Manual<sp/>text&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>&quot;2000-05-23T00:00:00&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>]</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>}</highlight></codeline>
+</programlisting></para>
+</sect1>
+<sect1 id="md__c___users_kuba___desktop_market_viewer__market_viewer_packages__newtonsoft__json_13_0_3__r_e_a_d_m_e_1autotoc_md4">
+<title>Links</title>
+<para><itemizedlist>
+<listitem><para><ulink url="https://www.newtonsoft.com/json">Homepage</ulink></para>
+</listitem><listitem><para><ulink url="https://www.newtonsoft.com/json/help">Documentation</ulink></para>
+</listitem><listitem><para><ulink url="https://www.nuget.org/packages/Newtonsoft.Json">NuGet Package</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/JamesNK/Newtonsoft.Json/releases">Release Notes</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/JamesNK/Newtonsoft.Json/blob/master/CONTRIBUTING.md">Contributing Guidelines</ulink></para>
+</listitem><listitem><para><ulink url="https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md">License</ulink></para>
+</listitem><listitem><para><ulink url="https://stackoverflow.com/questions/tagged/json.net">Stack Overflow</ulink> </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/packages/Newtonsoft.Json.13.0.3/README.md"/>
+  </compounddef>
+</doxygen>

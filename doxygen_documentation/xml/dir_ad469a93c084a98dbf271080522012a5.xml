@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_ad469a93c084a98dbf271080522012a5" kind="dir">
+    <compoundname>C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations</compoundname>
+    <innerfile refid="202303261927060___intial_create_8cs">202303261927060_IntialCreate.cs</innerfile>
+    <innerfile refid="202303261927060___intial_create_8_designer_8cs">202303261927060_IntialCreate.Designer.cs</innerfile>
+    <innerfile refid="202304052009313___initial_create_8cs">202304052009313_InitialCreate.cs</innerfile>
+    <innerfile refid="202304052009313___initial_create_8_designer_8cs">202304052009313_InitialCreate.Designer.cs</innerfile>
+    <innerfile refid="_configuration_8cs">Configuration.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations/"/>
+  </compounddef>
+</doxygen>

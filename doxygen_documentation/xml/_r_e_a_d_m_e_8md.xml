@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>![Logo](https://raw.githubusercontent.com/JamesNK/Newtonsoft.Json/master/Doc/icons/logo.jpg)<sp/>Json.NET</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![NuGet<sp/>version<sp/>(Newtonsoft.Json)](https://img.shields.io/nuget/v/Newtonsoft.Json.svg?style=flat-square)](https://www.nuget.org/packages/Newtonsoft.Json/)</highlight></codeline>
+<codeline><highlight class="normal">[![Build<sp/>status](https://dev.azure.com/jamesnk/Public/_apis/build/status/JamesNK.Newtonsoft.Json?branchName=master)](https://dev.azure.com/jamesnk/Public/_build/latest?definitionId=8)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Json.NET<sp/>is<sp/>a<sp/>popular<sp/>high-performance<sp/>JSON<sp/>framework<sp/>for<sp/>.NET</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Serialize<sp/>JSON</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```csharp</highlight></codeline>
+<codeline><highlight class="normal">Product<sp/>product<sp/>=<sp/>new<sp/>Product();</highlight></codeline>
+<codeline><highlight class="normal">product.Name<sp/>=<sp/>&quot;Apple&quot;;</highlight></codeline>
+<codeline><highlight class="normal">product.Expiry<sp/>=<sp/>new<sp/>DateTime(2008,<sp/>12,<sp/>28);</highlight></codeline>
+<codeline><highlight class="normal">product.Sizes<sp/>=<sp/>new<sp/>string[]<sp/>{<sp/>&quot;Small&quot;<sp/>};</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">string<sp/>json<sp/>=<sp/>JsonConvert.SerializeObject(product);</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>{</highlight></codeline>
+<codeline><highlight class="normal">//<sp/><sp/><sp/>&quot;Name&quot;:<sp/>&quot;Apple&quot;,</highlight></codeline>
+<codeline><highlight class="normal">//<sp/><sp/><sp/>&quot;Expiry&quot;:<sp/>&quot;2008-12-28T00:00:00&quot;,</highlight></codeline>
+<codeline><highlight class="normal">//<sp/><sp/><sp/>&quot;Sizes&quot;:<sp/>[</highlight></codeline>
+<codeline><highlight class="normal">//<sp/><sp/><sp/><sp/><sp/>&quot;Small&quot;</highlight></codeline>
+<codeline><highlight class="normal">//<sp/><sp/><sp/>]</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Deserialize<sp/>JSON</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```csharp</highlight></codeline>
+<codeline><highlight class="normal">string<sp/>json<sp/>=<sp/>@&quot;{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&apos;Name&apos;:<sp/>&apos;Bad<sp/>Boys&apos;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&apos;ReleaseDate&apos;:<sp/>&apos;1995-4-7T00:00:00&apos;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&apos;Genres&apos;:<sp/>[</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&apos;Action&apos;,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>&apos;Comedy&apos;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>]</highlight></codeline>
+<codeline><highlight class="normal">}&quot;;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Movie<sp/>m<sp/>=<sp/>JsonConvert.DeserializeObject&lt;Movie&gt;(json);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">string<sp/>name<sp/>=<sp/>m.Name;</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>Bad<sp/>Boys</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>LINQ<sp/>to<sp/>JSON</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```csharp</highlight></codeline>
+<codeline><highlight class="normal">JArray<sp/>array<sp/>=<sp/>new<sp/>JArray();</highlight></codeline>
+<codeline><highlight class="normal">array.Add(&quot;Manual<sp/>text&quot;);</highlight></codeline>
+<codeline><highlight class="normal">array.Add(new<sp/>DateTime(2000,<sp/>5,<sp/>23));</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">JObject<sp/>o<sp/>=<sp/>new<sp/>JObject();</highlight></codeline>
+<codeline><highlight class="normal">o[&quot;MyArray&quot;]<sp/>=<sp/>array;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">string<sp/>json<sp/>=<sp/>o.ToString();</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>{</highlight></codeline>
+<codeline><highlight class="normal">//<sp/><sp/><sp/>&quot;MyArray&quot;:<sp/>[</highlight></codeline>
+<codeline><highlight class="normal">//<sp/><sp/><sp/><sp/><sp/>&quot;Manual<sp/>text&quot;,</highlight></codeline>
+<codeline><highlight class="normal">//<sp/><sp/><sp/><sp/><sp/>&quot;2000-05-23T00:00:00&quot;</highlight></codeline>
+<codeline><highlight class="normal">//<sp/><sp/><sp/>]</highlight></codeline>
+<codeline><highlight class="normal">//<sp/>}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Links</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>[Homepage](https://www.newtonsoft.com/json)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Documentation](https://www.newtonsoft.com/json/help)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[NuGet<sp/>Package](https://www.nuget.org/packages/Newtonsoft.Json)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Release<sp/>Notes](https://github.com/JamesNK/Newtonsoft.Json/releases)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Contributing<sp/>Guidelines](https://github.com/JamesNK/Newtonsoft.Json/blob/master/CONTRIBUTING.md)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[License](https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[Stack<sp/>Overflow](https://stackoverflow.com/questions/tagged/json.net)</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/packages/Newtonsoft.Json.13.0.3/README.md"/>
+  </compounddef>
+</doxygen>

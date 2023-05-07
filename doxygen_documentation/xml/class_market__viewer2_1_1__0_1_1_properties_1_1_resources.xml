@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_market__viewer2_1_1__0_1_1_properties_1_1_resources" kind="class" language="C#" prot="package">
+    <compoundname>Market_viewer2::_0::Properties::Resources</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a5060eac6c8dd3877a3211bbc73363945" prot="private" static="yes" mutable="no">
+        <type>global::System.Resources.ResourceManager</type>
+        <definition>global::System.Resources.ResourceManager Market_viewer2._0.Properties.Resources.resourceMan</definition>
+        <argsstring></argsstring>
+        <name>resourceMan</name>
+        <qualifiedname>Market_viewer2._0.Properties.Resources.resourceMan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" line="28" column="63" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a90524f6edaee398e8bfa20f5cff0bdd1" prot="private" static="yes" mutable="no">
+        <type>global::System.Globalization.CultureInfo</type>
+        <definition>global::System.Globalization.CultureInfo Market_viewer2._0.Properties.Resources.resourceCulture</definition>
+        <argsstring></argsstring>
+        <name>resourceCulture</name>
+        <qualifiedname>Market_viewer2._0.Properties.Resources.resourceCulture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" line="30" column="63" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1aafe07d703e6ee81717bbacaf1810472f" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>global::System.Resources.ResourceManager</type>
+        <definition>global::System.Resources.ResourceManager Market_viewer2._0.Properties.Resources.ResourceManager</definition>
+        <argsstring></argsstring>
+        <name>ResourceManager</name>
+        <qualifiedname>Market_viewer2._0.Properties.Resources.ResourceManager</qualifiedname>
+        <briefdescription>
+<para>Returns the cached ResourceManager instance used by this class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" line="41" column="64" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" bodystart="42" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="property" id="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a659af8b7888115dd17c560af7bed03f5" prot="package" static="yes" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>global::System.Globalization.CultureInfo</type>
+        <definition>global::System.Globalization.CultureInfo Market_viewer2._0.Properties.Resources.Culture</definition>
+        <argsstring></argsstring>
+        <name>Culture</name>
+        <qualifiedname>Market_viewer2._0.Properties.Resources.Culture</qualifiedname>
+        <briefdescription>
+<para>Overrides the current thread&apos;s CurrentUICulture property for all resource lookups using this strongly typed resource class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" line="59" column="64" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" bodystart="60" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a22e1d29dbc0bc567fd7792e010a0c7fa" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Market_viewer2._0.Properties.Resources.Resources</definition>
+        <argsstring>()</argsstring>
+        <name>Resources</name>
+        <qualifiedname>Market_viewer2._0.Properties.Resources.Resources</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" line="33" column="18" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" bodystart="33" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A strongly-typed resource class, for looking up localized strings, etc. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" line="25" column="13" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties/Resources.Designer.cs" bodystart="26" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a659af8b7888115dd17c560af7bed03f5" prot="package" virt="non-virtual"><scope>Market_viewer2::_0::Properties::Resources</scope><name>Culture</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a90524f6edaee398e8bfa20f5cff0bdd1" prot="private" virt="non-virtual"><scope>Market_viewer2::_0::Properties::Resources</scope><name>resourceCulture</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a5060eac6c8dd3877a3211bbc73363945" prot="private" virt="non-virtual"><scope>Market_viewer2::_0::Properties::Resources</scope><name>resourceMan</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1aafe07d703e6ee81717bbacaf1810472f" prot="package" virt="non-virtual"><scope>Market_viewer2::_0::Properties::Resources</scope><name>ResourceManager</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_properties_1_1_resources_1a22e1d29dbc0bc567fd7792e010a0c7fa" prot="package" virt="non-virtual"><scope>Market_viewer2::_0::Properties::Resources</scope><name>Resources</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

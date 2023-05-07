@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="class_market__viewer2_1_1__0_1_1_app" kind="class" language="C#" prot="public">
+    <compoundname>Market_viewer2::_0::App</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Application</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Application</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_market__viewer2_1_1__0_1_1_app_1a672648909bc6fa43d4a3b186937b4e3b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Market_viewer2._0.App::_contentLoaded</definition>
+        <argsstring></argsstring>
+        <name>_contentLoaded</name>
+        <qualifiedname>Market_viewer2._0.App._contentLoaded</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/App.g.cs" line="43" column="22" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/App.g.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_app_1a222f842ddf2917717b5f06b8ccfd36f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer2._0.App.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Market_viewer2._0.App.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/App.g.cs" line="50" column="21" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/App.g.cs" bodystart="50" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_app_1a222f842ddf2917717b5f06b8ccfd36f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer2._0.App.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Market_viewer2._0.App.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/App.g.i.cs" line="50" column="21" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/App.g.i.cs" bodystart="50" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_app_1a222f842ddf2917717b5f06b8ccfd36f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Market_viewer2._0.App.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Market_viewer2._0.App.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>InitializeComponent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Release/App.g.cs" line="48" column="21" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Release/App.g.cs" bodystart="48" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_app_1a9a799fdda757b10133773fbf5830517c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Market_viewer2._0.App.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <qualifiedname>Market_viewer2._0.App.Main</qualifiedname>
+        <briefdescription>
+<para>Application Entry Point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/App.g.cs" line="76" column="28" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/App.g.cs" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_app_1a9a799fdda757b10133773fbf5830517c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Market_viewer2._0.App.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <qualifiedname>Market_viewer2._0.App.Main</qualifiedname>
+        <briefdescription>
+<para>Application Entry Point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/App.g.i.cs" line="76" column="28" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Debug/App.g.i.cs" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_market__viewer2_1_1__0_1_1_app_1a9a799fdda757b10133773fbf5830517c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Market_viewer2._0.App.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <qualifiedname>Market_viewer2._0.App.Main</qualifiedname>
+        <briefdescription>
+<para>Application Entry Point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Release/App.g.cs" line="63" column="28" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj/Release/App.g.cs" bodystart="63" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interaction logic for App.xaml. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>App. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Application</label>
+      </node>
+      <node id="1">
+        <label>Market_viewer2._0.App</label>
+        <link refid="class_market__viewer2_1_1__0_1_1_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System::Windows::Application</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Application</label>
+      </node>
+      <node id="1">
+        <label>Market_viewer2._0.App</label>
+        <link refid="class_market__viewer2_1_1__0_1_1_app"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>System::Windows::Application</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/App.xaml.cs" line="8" column="19" bodyfile="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/App.xaml.cs" bodystart="9" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_market__viewer2_1_1__0_1_1_app_1a672648909bc6fa43d4a3b186937b4e3b" prot="private" virt="non-virtual"><scope>Market_viewer2::_0::App</scope><name>_contentLoaded</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_app_1a222f842ddf2917717b5f06b8ccfd36f5" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::App</scope><name>InitializeComponent</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_app_1a222f842ddf2917717b5f06b8ccfd36f5" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::App</scope><name>InitializeComponent</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_app_1a222f842ddf2917717b5f06b8ccfd36f5" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::App</scope><name>InitializeComponent</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_app_1a9a799fdda757b10133773fbf5830517c" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::App</scope><name>Main</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_app_1a9a799fdda757b10133773fbf5830517c" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::App</scope><name>Main</name></member>
+      <member refid="class_market__viewer2_1_1__0_1_1_app_1a9a799fdda757b10133773fbf5830517c" prot="public" virt="non-virtual"><scope>Market_viewer2::_0::App</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

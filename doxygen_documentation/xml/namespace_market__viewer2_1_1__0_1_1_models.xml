@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="namespace_market__viewer2_1_1__0_1_1_models" kind="namespace" language="C#">
+    <compoundname>Market_viewer2::_0::Models</compoundname>
+    <innerclass refid="class_market__viewer2_1_1__0_1_1_models_1_1_api" prot="public">Market_viewer2::_0::Models::Api</innerclass>
+    <innerclass refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_context" prot="public">Market_viewer2::_0::Models::StockContext</innerclass>
+    <innerclass refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_data_point" prot="public">Market_viewer2::_0::Models::StockDataPoint</innerclass>
+    <innerclass refid="class_market__viewer2_1_1__0_1_1_models_1_1_stock_db_initializer" prot="public">Market_viewer2::_0::Models::StockDbInitializer</innerclass>
+    <innerclass refid="class_market__viewer2_1_1__0_1_1_models_1_1_wallet" prot="public">Market_viewer2::_0::Models::Wallet</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models/Api.cs" line="4" column="1"/>
+  </compounddef>
+</doxygen>

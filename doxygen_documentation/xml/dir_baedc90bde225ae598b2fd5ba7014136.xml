@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_baedc90bde225ae598b2fd5ba7014136" kind="dir">
+    <compoundname>C:/Users/kuba_/Desktop/market_viewer/Market_viewer</compoundname>
+    <innerdir refid="dir_ad469a93c084a98dbf271080522012a5">C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Migrations</innerdir>
+    <innerdir refid="dir_3e041d7882c0b736bc4e27709ce3a5a5">C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Models</innerdir>
+    <innerdir refid="dir_541807e0b2086b25a7e6f51f98f772b2">C:/Users/kuba_/Desktop/market_viewer/Market_viewer/obj</innerdir>
+    <innerdir refid="dir_b68775da77d0111b6741203f9c583628">C:/Users/kuba_/Desktop/market_viewer/Market_viewer/packages</innerdir>
+    <innerdir refid="dir_f80fcfe9a5e8111defee79f8a1199d18">C:/Users/kuba_/Desktop/market_viewer/Market_viewer/Properties</innerdir>
+    <innerfile refid="_app_8xaml_8cs">App.xaml.cs</innerfile>
+    <innerfile refid="_main_window_8xaml_8cs">MainWindow.xaml.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/kuba_/Desktop/market_viewer/Market_viewer/"/>
+  </compounddef>
+</doxygen>
